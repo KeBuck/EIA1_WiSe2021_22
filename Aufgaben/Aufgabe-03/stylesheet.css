@@ -36,9 +36,22 @@ a:hover {
     height: 800px;
     border: 1px #b63514;
     border-radius: 100%;
+    margin: -420px 0px 80px;
+    margin-right: auto;
+    margin-left: auto;
 
 }
 
 #title h1 {
+    color:ivory;
+    text-align: center;
+    margin-top: 400px;
+    font-size: 190px;
+    font-weight: 800;
+    letter-spacing: -20px;
+
+}
+
+h1 {
 
 }

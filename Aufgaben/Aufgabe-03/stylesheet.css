@@ -25,6 +25,6 @@ body{
     margin: 0 15px;
 }
 
-.aktive {
-    color:orange;
+a.navbar:hover, a.navbar:active {
+    color: orange;
 }

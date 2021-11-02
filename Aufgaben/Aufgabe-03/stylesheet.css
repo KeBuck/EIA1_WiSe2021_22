@@ -67,9 +67,9 @@ a:hover {
     margin-left: 356px;
 }
 
-a.fb {
+#title img {
     display: block;
     width: 30px;
     position: absolute;
-    margin: 30px 200px 0px 356px;
+    margin: 30px 200px 0px 500px;
 }

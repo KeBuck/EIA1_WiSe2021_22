@@ -25,6 +25,8 @@ body{
     margin: 0 15px;
 }
 
-a.navbar:hover, a.navbar:active {
-    color: orange;
+.nav-aktive a {
+    text-decoration: none;
+    color: #b63518;
+    transition: all 200ms ease-in;
 }

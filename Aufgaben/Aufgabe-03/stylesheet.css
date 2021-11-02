@@ -45,15 +45,16 @@ a:hover {
 #title h1 {
     color:ivory;
     text-align: center;
-    font-size: 190px;
+    font-size: 200px;
     font-weight: 800;
     letter-spacing: -20px;
 
 }
 
-title h2 {
-    font-size: 60px;
+#title h2 {
+    color: ivory;
+    font-size: 65px;
     font-weight: 800;
-    text-align: right;
-    margin: -400px 0px 10px 320px;
+    text-align: center;
+    margin: -200px 0px 10px 320px;
 }

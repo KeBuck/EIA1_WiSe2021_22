@@ -4,27 +4,27 @@ body{
     font-family: sans-serif;
 }
 
-nav{
-
+#navbar {
+    position: sticky;
+    top: 0;
+    margin-right: 100px;
+    overflow: hidden;
+    list-style: none;
+    background-color: black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 5px;
+    float: right;
 }
 
-.div-nav{
-
+#navbar a{
+    color: ivory;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 18px;
+    margin: 0 15px;
 }
 
-
-main{
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-p{
-    text-align: center;
-}
-
-img, video{
-    display: block;
-    
+.aktive {
+    color:orange;
 }

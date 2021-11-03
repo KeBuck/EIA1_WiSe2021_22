@@ -72,9 +72,10 @@ a:hover {
     width: 30px;
     position: absolute;
     margin: 10px 200px 0px 355px;
-   color: ivory;
+    color: ivory;
 }
 
-#seal {
-    margin: ;
+#seal img {
+    width: 200px;
+    margin: -350px 250px 110px 100px;
 }

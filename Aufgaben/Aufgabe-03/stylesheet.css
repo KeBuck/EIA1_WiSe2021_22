@@ -76,6 +76,19 @@ a:hover {
 }
 
 #seal img {
-    width: 200px;
-    margin: -350px 250px 110px 100px;
+    width: 180px;
+    position: absolute;
+    margin: -300px 200px 0px 385px;
+}
+
+.inhalt {
+    width: 800px;
+    /*position: absolute;*/
+    
+}
+
+.inhalt h3{
+    font-size: 28px;
+    color: #b63514;
+    font-weight: 600;
 }

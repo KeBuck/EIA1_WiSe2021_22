@@ -92,3 +92,22 @@ a:hover {
     color: #b63514;
     font-weight: 600;
 }
+
+.inhalt p {
+    font-size: 13px;
+    color:rgb(182, 182, 182);
+}
+
+input[type=text] {
+    background-color: rgb(182, 182, 182);
+    color: ivory;
+    font-size: 15px;
+    border: none;
+}
+
+input[type=submit] {
+    background-color: rgb(182, 182, 182);
+    color: ivory;
+    font-size: 15px;
+    border: none;
+}

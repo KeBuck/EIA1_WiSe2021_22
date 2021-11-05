@@ -132,3 +132,7 @@ input[type=text] {
     margin: 4px 2px;
     cursor: pointer;
 }
+
+#datenschutz {
+    color: rgb(182, 182, 182);
+}

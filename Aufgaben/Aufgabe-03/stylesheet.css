@@ -116,9 +116,18 @@ input[type=text] {
 }
 
 
-input [type="submit"] {
-    background-color: rgb(182, 182, 182);
-    color: ivory;
-    font-size: 15px;
+.submit button {
+    background-color: lightgray;
     border: none;
+    width: 100px;
+    height: 25px;
+    padding: 3px;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: ivory;
+    margin-bottom: 200px;
+    margin-left: 10px;
+    cursor: pointer;
+
 }

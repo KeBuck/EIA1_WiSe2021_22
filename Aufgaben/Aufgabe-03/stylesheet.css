@@ -77,6 +77,12 @@ a:hover {
     position: absolute;
     margin: 10px 200px 0px 355px;
     color: ivory;
+    opacity: 50%;
+}
+
+#title img:hover {
+    opacity: 100%;
+    transition: .3s ease;
 }
 
 #seal img {

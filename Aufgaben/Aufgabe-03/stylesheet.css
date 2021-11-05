@@ -22,7 +22,7 @@ body{
 }
 
 #navbar a{
-    color: ivory;
+    /*color: ivory;*/
     font-size: 15px;
     text-decoration: none;
     border-radius: 18px;
@@ -36,6 +36,10 @@ body{
 
 .active {
     color: orangered;
+}
+
+.deactivate {
+    color: ivory;
 }
 
 #title {
@@ -95,11 +99,6 @@ body{
     margin: -300px 200px 0px 35px;
 }
 
-.inhalt {
-    width: 800px;
-    /*position: absolute;*/
-    
-}
 
 .inhalt h3{
     font-size: 28px;

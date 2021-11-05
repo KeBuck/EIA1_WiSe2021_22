@@ -99,35 +99,36 @@ a:hover {
 }
 
 input[type=text] {
-    background-color: rgb(182, 182, 182);
-    color: ivory;
-    font-size: 15px;
+    background-color: lightgray;
     border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
     margin-bottom: 10px;
-    width: 250px;
+    width: 30%;
 }
 
 .inhalt textarea {
-    background-color: rgb(182, 182, 182);
-    color: ivory;
-    font-family: sans-serif;
-    font-size: 15px;
+    background-color: lightgray;
     border: none;
+    color: white;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 50%;
 }
 
 
-.submit button {
+.button {
     background-color: lightgray;
     border: none;
-    width: 100px;
-    height: 25px;
-    padding: 3px;
-    font-size: 18px;
-    font-family: sans-serif;
-    font-weight: 100;
-    color: ivory;
-    margin-bottom: 200px;
-    margin-left: 10px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 4px 2px;
     cursor: pointer;
-
 }

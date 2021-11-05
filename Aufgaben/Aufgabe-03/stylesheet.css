@@ -2,6 +2,10 @@
 body{
     background-image: url(images/bg.png);
     font-family: sans-serif;
+    max-width: 800px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #navbar {
@@ -78,7 +82,7 @@ a:hover {
 #seal img {
     width: 180px;
     position: absolute;
-    margin: -300px 200px 0px 385px;
+    margin: -300px 200px 0px 35px;
 }
 
 .inhalt {

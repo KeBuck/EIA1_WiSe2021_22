@@ -29,9 +29,13 @@ body{
     margin: 0 15px;
 }
 
-/* Problem */
-a:hover {
-    color: orange;
+#navbar a:hover {
+    color: orangered;
+
+}
+
+.active {
+    color: orangered;
 }
 
 #title {

@@ -21,3 +21,14 @@ body {
     left: 460px;
 
 }
+
+.text {
+    width: 500px;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+
+    text-align: left;
+    color: white;
+
+}

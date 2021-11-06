@@ -9,3 +9,12 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.text {
+    width: 500px;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+
+    text-align: left;
+    color: white;
+}

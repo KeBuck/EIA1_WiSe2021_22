@@ -1,16 +1,23 @@
-html, body {
-    height: 100%;
-    width: 100%;
+body {
     background-image: url(images/bg.png);
 }
 
-.background {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.wrapper {
-    width: 100%;
+.busch {
+    position: absolute;
+    top: -60px;
+    left: -70px;
 }
 
+.pinguin {
+    position: absolute;
+    top: 220px;
+    left: 460px;
+
+}

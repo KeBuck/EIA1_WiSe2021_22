@@ -18,3 +18,21 @@ body {
     text-align: left;
     color: white;
 }
+
+.stern-1 {
+    position: absolute;
+    top: 210px;
+    left: 50px;
+}
+
+a img:last-child {
+    display: none;
+}
+
+a:hover img:last-child {
+    display: block;
+}
+
+a:hover img:first-child {
+    display: none;
+}

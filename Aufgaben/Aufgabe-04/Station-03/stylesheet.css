@@ -25,6 +25,24 @@ body {
     left: 50px;
 }
 
+.stern-2 {
+    position: absolute;
+    top: 160px;
+    left: 150px;
+}
+
+.stern-3 {
+    position: absolute;
+    top: 280px;
+    left: 250px;
+}
+
+.stern-4 {
+    position: absolute;
+    top: 210px;
+    left: 400px;
+}
+
 a img:last-child {
     display: none;
 }

@@ -26,8 +26,43 @@ body {
 
 }
 
-.schnne1 {
+@keyframes schnee-klein1 {
+    from {top: 10px; left: 100px;}
+    to {top: 370px; left: 100px;}
+    
+}
+
+.schnee1 {
     position: absolute;
-    top: 0px;
-    left: 30px;
+    animation-name: schnee-klein1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes schnee-gross {
+    from {top: 10px; left: 280px;}
+    to {top: 350px; left: 280px;}
+}
+
+.schnee2 {
+    position: absolute;
+    animation-name: schnee-gross;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    /*animation-delay: 1s;*/
+}
+
+@keyframes schnee-klein2 {
+    from{top: 10px; left: 500px;}
+    to {top: 370px; left: 500px;}
+}
+
+.schnee3 {
+    position: absolute;
+    animation-name: schnee-klein2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
 }

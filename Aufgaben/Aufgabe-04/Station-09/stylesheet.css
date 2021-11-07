@@ -9,17 +9,10 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.busch {
+.banderole {
     position: absolute;
-    top: -60px;
-    left: -70px;
-}
-
-.pinguin {
-    position: absolute;
-    top: 220px;
-    left: 460px;
-
+    top: 278px;
+    left: 370px;
 }
 
 .text {
@@ -31,4 +24,10 @@ body {
     text-align: left;
     color: white;
 
+}
+
+.schnne1 {
+    position: absolute;
+    top: 0px;
+    left: 30px;
 }

@@ -1,0 +1,53 @@
+body {
+    background-image: url(images/bg.png);
+}
+
+.Container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@font-face {
+    font-family: Sacramento;
+    src: url(fonts/Sacramento-Regular.ttf);
+}
+
+@font-face {
+    font-family: HomemadeApple;
+    src: url(fonts/HomemadeApple-Regular.ttf);
+}
+
+@font-face {
+    font-family: Satisfy;
+    src: url(fonts/Satisfy-Regular.ttf);
+}
+
+.text {
+    width: 500px;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+
+    text-align: left;
+    color: white;
+}
+
+.text h1 {
+    font-family: Sacramento, sans-serif;
+    font-size: 40px;
+}
+
+#main-text {
+    font-family: Satisfy, sans-serif;
+    font-size: 15px;
+
+}
+
+#unterschrift {
+    font-family: HomemadeApple, sans-serif;
+    font-size: 18px;
+
+}

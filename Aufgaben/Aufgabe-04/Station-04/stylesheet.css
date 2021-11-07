@@ -15,6 +15,16 @@ body {
     src: url(fonts/Sacramento-Regular.ttf);
 }
 
+@font-face {
+    font-family: HomemadeApple;
+    src: url(fonts/HomemadeApple-Regular.ttf);
+}
+
+@font-face {
+    font-family: Satisfy;
+    src: url(fonts/Satisfy-Regular.ttf);
+}
+
 .text {
     width: 500px;
     position: absolute;
@@ -23,6 +33,21 @@ body {
 
     text-align: left;
     color: white;
+}
+
+.text h1 {
+    font-family: Sacramento, sans-serif;
+    font-size: 40px;
+}
+
+#main-text {
+    font-family: Satisfy, sans-serif;
+    font-size: 15px;
 
 }
 
+#unterschrift {
+    font-family: HomemadeApple, sans-serif;
+    font-size: 18px;
+
+}

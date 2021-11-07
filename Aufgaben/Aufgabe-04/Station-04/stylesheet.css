@@ -9,6 +9,12 @@ body {
     transform: translate(-50%, -50%);
 }
 
+
+@font-face {
+    font-family: Sacramento;
+    src: url(fonts/Sacramento-Regular.ttf);
+}
+
 .text {
     width: 500px;
     position: absolute;
@@ -19,3 +25,4 @@ body {
     color: white;
 
 }
+

@@ -56,12 +56,12 @@ console.log ("Relativ zur Gesamtemission der Welt verursacht" + continent4 + "da
 console.log ("Relativ zur Gesamtemission der Welt verursacht" + continent5 + "damit" + continentTotalAsia + "%.");
 console.log ("Relativ zur Gesamtemission der Welt verursacht" + continent6 + "damit" + continentTotalAustralia + "%.");
 
-console.log ("Für" + continent1 + "hat sich 2018 im Vergleich zu 2008 die Emission um" + Africa2008_2018 + "%.");
-console.log ("Für" + continent2 + "hat sich 2018 im Vergleich zu 2008 die Emission um" + SouthAmerica2008_2018 + "%.");
-console.log ("Für" + continent3 + "hat sich 2018 im Vergleich zu 2008 die Emission um" + Europe2008_2018 + "%.");
-console.log ("Für" + continent4 + "hat sich 2018 im Vergleich zu 2008 die Emission um" + NorthAmerica2008_2018 + "%.");
-console.log ("Für" + continent5 + "hat sich 2018 im Vergleich zu 2008 die Emission um" + Asia2008_2018 + "%.");
-console.log ("Für" + continent6 + "hat sich 2018 im Vergleich zu 2008 die Emission um" + Austrilia2008_2018 + "%.");
+console.log ("Für" + continent1 + "hat sich 2018 im Vergleich zu 2008 die Emission um" + Africa2008_2018 + "% verändert.");
+console.log ("Für" + continent2 + "hat sich 2018 im Vergleich zu 2008 die Emission um" + SouthAmerica2008_2018 + "% verändert.");
+console.log ("Für" + continent3 + "hat sich 2018 im Vergleich zu 2008 die Emission um" + Europe2008_2018 + "% verändert.");
+console.log ("Für" + continent4 + "hat sich 2018 im Vergleich zu 2008 die Emission um" + NorthAmerica2008_2018 + "% verändert.");
+console.log ("Für" + continent5 + "hat sich 2018 im Vergleich zu 2008 die Emission um" + Asia2008_2018 + "% verändert.");
+console.log ("Für" + continent6 + "hat sich 2018 im Vergleich zu 2008 die Emission um" + Austrilia2008_2018 + "% verändert.");
 
 
 console.log ("Für" + continent1 + "2018 im Vergleich zu 2008 das" + continent1_2008_2018 + "kg CO2.");

@@ -18,3 +18,14 @@ var continent3_2018: number = 4.209.3;
 var continent4_2018: number = 6.305.6;
 var continent5_2018: number = 16.274.1;
 var continent6_2018: number = 2.100.5;
+
+var totalContinent_2018 = Math.round(continent1_2018 + continent2_2018 + continent3_2018 + continent4_2018 + continent5_2018 + continent5_2018*100)/100;
+
+var continentTotalAfrica = Math.round((continent1_2018*100/totalContinent_2018)*100)/100;
+var continentTotalSouthAmerica = Math.round((continent2_2018*100/totalContinent_2018)*100)/100;
+var continentTotalEurope = Math.round((continent3_2018*100/totalContinent_2018)*100)/100;
+var continentTotalNorthAmerica = Math.round((continent4_2018*100/totalContinent_2018)*100)/100;
+var continentTotalAsia = Math.round((continent5_2018*100/totalContinent_2018)*100)/100;
+var continentTotalAustralia = Math.round((continent6_2018*100/totalContinent_2018)*100)/100;
+
+

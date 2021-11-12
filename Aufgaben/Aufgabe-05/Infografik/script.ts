@@ -30,7 +30,7 @@ var continentTotalAustralia: number = Math.round((continent6_2018 *100 / totalCo
 
 var Africa2008_2018: number = Math.round(100 - (continent1_2018 *100 / continent1_2008));
 var SouthAmerica2008_2018: number = Math.round(100 - (continent2_2018 *100 / continent2_2008));
-var Europe2008_2018: number = Math.round(100  -(continent3_2018 *100 / continent3_2008));
+var Europe2008_2018: number = Math.round(100  - (continent3_2018 *100 / continent3_2008));
 var NorthAmerica2008_2018: number = Math.round(100 - (continent4_2018 *100 / continent4_2008));
 var Asia2008_2018: number = Math.round(100 - (continent5_2018 *100 / continent5_2008));
 var Austrilia2008_2018: number = Math.round(100 - (continent6_2018 *100 / continent6_2008));

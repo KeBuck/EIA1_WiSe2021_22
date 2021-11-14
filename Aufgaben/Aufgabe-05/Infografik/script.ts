@@ -70,3 +70,5 @@ console.log ("Für " + continent3 + " 2018 im Vergleich zu 2008 das " + continen
 console.log ("Für " + continent4 + " 2018 im Vergleich zu 2008 das " + continent4_2008_2018 + " kg CO2.");
 console.log ("Für " + continent5 + " 2018 im Vergleich zu 2008 das " + continent5_2008_2018 + " kg CO2.");
 console.log ("Für " + continent6 + " 2018 im Vergleich zu 2008 das " + continent6_2008_2018 + " kg CO2.");
+
+console.log ("Total Continent" + totalContinent_2018)

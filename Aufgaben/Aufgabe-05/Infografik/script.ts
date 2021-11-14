@@ -28,12 +28,12 @@ var continentTotalNorthAmerica: number = Math.round((continent4_2018 *100 / tota
 var continentTotalAsia: number = Math.round((continent5_2018 *100 / totalContinent_2018) *100) / 100;
 var continentTotalAustralia: number = Math.round((continent6_2018 *100 / totalContinent_2018) *100) / 100;
 
-var Africa2008_2018: number = Math.round(100 - (continent1_2018 *100 / continent1_2008));
-var SouthAmerica2008_2018: number = Math.round(100 - (continent2_2018 *100 / continent2_2008));
-var Europe2008_2018: number = Math.round(100  - (continent3_2018 *100 / continent3_2008));
-var NorthAmerica2008_2018: number = Math.round(100 - (continent4_2018 *100 / continent4_2008));
-var Asia2008_2018: number = Math.round(100 - (continent5_2018 *100 / continent5_2008));
-var Austrilia2008_2018: number = Math.round(100 - (continent6_2018 *100 / continent6_2008));
+var Africa2008_2018: number = Math.round((continent1_2018 *100 / continent1_2008) - 100);
+var SouthAmerica2008_2018: number = Math.round((continent2_2018 *100 / continent2_2008) - 100);
+var Europe2008_2018: number = Math.round((continent3_2018 *100 / continent3_2008) - 100);
+var NorthAmerica2008_2018: number = Math.round((continent4_2018 *100 / continent4_2008) - 100);
+var Asia2008_2018: number = Math.round((continent5_2018 *100 / continent5_2008) - 100);
+var Austrilia2008_2018: number = Math.round((continent6_2018 *100 / continent6_2008) - 100);
 
 var continent1_2008_2018: number = Math.round(continent1_2018 - continent1_2008);
 var continent2_2008_2018: number = Math.round(continent2_2018 - continent2_2008);

@@ -21,7 +21,7 @@ var continent6_2018: number = 2100.5;
 
 var totalContinent_2018: number = Math.round(continent1_2018 + continent2_2018 + continent3_2018 + continent4_2018 + continent5_2018 + continent5_2018 + continent6_2018);
 
-var continentTotalAfrica: number = (continent1_2018 *100 / totalContinent_2018);
+var continentTotalAfrica: number = Math.round(continent1_2018 *100 / totalContinent_2018);
 var continentTotalSouthAmerica: number = Math.round((continent2_2018 *100 / totalContinent_2018) *100) / 100;
 var continentTotalEurope: number = Math.round((continent3_2018 *100 / totalContinent_2018) *100) / 100;
 var continentTotalNorthAmerica: number = Math.round((continent4_2018 *100 / totalContinent_2018) *100) / 100;
@@ -71,4 +71,4 @@ console.log ("Für " + continent4 + " 2018 im Vergleich zu 2008 das " + continen
 console.log ("Für " + continent5 + " 2018 im Vergleich zu 2008 das " + continent5_2008_2018 + " kg CO2.");
 console.log ("Für " + continent6 + " 2018 im Vergleich zu 2008 das " + continent6_2008_2018 + " kg CO2.");
 
-console.log ("Total Continent" + totalContinent_2018)
+console.log ("Total Continent " + totalContinent_2018)

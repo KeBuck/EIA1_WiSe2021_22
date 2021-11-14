@@ -22,11 +22,11 @@ var continent6_2018: number = 2100.5;
 var totalContinent_2018: number = Math.round(continent1_2018 + continent2_2018 + continent3_2018 + continent4_2018 + continent5_2018 + continent5_2018 + continent6_2018);
 
 var continentTotalAfrica: number = Math.round((continent1_2018 *100) / totalContinent_2018);
-var continentTotalSouthAmerica: number = Math.round((continent2_2018 *100 / totalContinent_2018) *100) / 100;
-var continentTotalEurope: number = Math.round((continent3_2018 *100 / totalContinent_2018) *100) / 100;
-var continentTotalNorthAmerica: number = Math.round((continent4_2018 *100 / totalContinent_2018) *100) / 100;
-var continentTotalAsia: number = Math.round((continent5_2018 *100 / totalContinent_2018) *100) / 100;
-var continentTotalAustralia: number = Math.round((continent6_2018 *100 / totalContinent_2018) *100) / 100;
+var continentTotalSouthAmerica: number = Math.round((continent2_2018 *100) / totalContinent_2018);
+var continentTotalEurope: number = Math.round((continent3_2018 *100) / totalContinent_2018);
+var continentTotalNorthAmerica: number = Math.round((continent4_2018 *100) / totalContinent_2018);
+var continentTotalAsia: number = Math.round((continent5_2018 *100) / totalContinent_2018);
+var continentTotalAustralia: number = Math.round((continent6_2018 *100) / totalContinent_2018);
 
 var Africa2008_2018: number = Math.round((continent1_2018 *100 / continent1_2008) - 100);
 var SouthAmerica2008_2018: number = Math.round((continent2_2018 *100 / continent2_2008) - 100);

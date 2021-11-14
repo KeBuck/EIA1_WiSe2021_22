@@ -5,7 +5,7 @@ var continent4: string = "North America";
 var continent5: string = "Asia";
 var continent6: string = "Australia";
 
-var continent1_2008: number = 1208;
+var continent1_2008: number = 1028;
 var continent2_2008: number = 1132.6;
 var continent3_2008: number = 4965.7;
 var continent4_2008: number = 6600.4;
@@ -15,11 +15,11 @@ var continent6_2008: number = 1993;
 var continent1_2018: number = 1235.5;
 var continent2_2018: number = 1261.5;
 var continent3_2018: number = 4209.3;
-var continent4_2018: number = 6305.6;
+var continent4_2018: number = 6035.6;
 var continent5_2018: number = 16274.1;
 var continent6_2018: number = 2100.5;
 
-var totalContinent_2018: number = Math.round(continent1_2018 + continent2_2018 + continent3_2018 + continent4_2018 + continent5_2018 + continent5_2018 + continent6_2018);
+var totalContinent_2018: number = (continent1_2018 + continent2_2018 + continent3_2018 + continent4_2018 + continent5_2018 + continent6_2018);
 
 var continentTotalAfrica: number = Math.round((continent1_2018 *100) / totalContinent_2018);
 var continentTotalSouthAmerica: number = Math.round((continent2_2018 *100) / totalContinent_2018);

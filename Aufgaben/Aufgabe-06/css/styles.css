@@ -13,7 +13,11 @@ nav {
 }
 
 .europe {
-    background-image: url(images/europe.png);
+    background-image: url(../images/europe.png);
+    height: 159px;
+    width: 184px;
+    border: none;
+    background-color: none;
 }
 
 section {

@@ -12,6 +12,10 @@ nav {
     margin-bottom: 60px;
 }
 
+.europe {
+    background-image: url(images/europe.png);
+}
+
 section {
     display: inline-block;
     margin: 20px;

@@ -12,14 +12,6 @@ nav {
     margin-bottom: 60px;
 }
 
-.europe {
-    background-image: url(../images/europe.png);
-    height: 159px;
-    width: 184px;
-    border: none;
-    background-color: none;
-}
-
 section {
     display: inline-block;
     margin: 20px;

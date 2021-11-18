@@ -44,6 +44,16 @@ namespace Aufgabe06 {
     var continent5_2008_2018: number = Math.round(continent5_2018 - continent5_2008);
     var continent6_2008_2018: number = Math.round(continent6_2018 - continent6_2008);
 
+    const myBtn1: HTMLButtonElement = document.getElementById("btn1") as HTMLButtonElement;
+        myBtn1.addEventListener("click", function (): void {
+            document.getElementById("emissionText").innerText = "Emission absolute of Europe in 2018";
+            });
+    ;
+
+    const myBtn2: HTMLButtonElement = document.getElementById("btn2") as HTMLButtonElement;
+            myBtn2.addEventListener("click", function(): void {
+                document.getElementById("emissionText").innerText = "Emission absolute of North America in 2018"
+            });
 }
 
 

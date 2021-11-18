@@ -1,3 +1,12 @@
+namespace Aufgabe06 {
+    
+}
+
+
+
+
+
+
 var continent1: string = "Africa";
 var continent2: string = "South America";
 var continent3: string = "Europe";

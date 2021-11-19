@@ -50,11 +50,11 @@ namespace Aufgabe06 {
 
     //EventListenrr reagiert auf "click" eines Element
     myBtn1.addEventListener("click", function(): void {
-        emissionNumberEurope(continent3_2018);
+        emissionNumberEurope(europe2018);
     });
 
-    function emissionNumberEurope (number2018) {
-        document.getElementById("emissionNumber").innerHTML = number2018;
+    function emissionNumberEurope (europe2018) {
+        document.getElementById("emissionNumber").innerHTML = "4209.3";
     }
 
 
@@ -62,11 +62,11 @@ namespace Aufgabe06 {
     const textElement2: HTMLParagraphElement = document.getElementById("emissionNumber") as HTMLParagraphElement;
 
     myBtn2.addEventListener("click", function(): void {
-        emissionNumberNorthAmerica(continent4_2018)
+        emissionNumberNorthAmerica(northAmerica2018)
     });
 
-    function emissionNumberNorthAmerica (number2018) {
-        document.getElementById("emssionNumber").innerHTML = number2018;
+    function emissionNumberNorthAmerica (northAmerica2018) {
+        document.getElementById("emissionNumber").innerHTML = "6035.6";
     }
 
     //const myBtn1: HTMLInputElement = document.getElementById("EuropaBild") as HTMLInputElement;

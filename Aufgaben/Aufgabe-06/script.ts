@@ -23,7 +23,7 @@ namespace Aufgabe06 {
 
     var totalContinent_2018: number = (continent1_2018 + continent2_2018 + continent3_2018 + continent4_2018 + continent5_2018 + continent6_2018);
 
-    var continentTotalAfrica: number = Math.round((continent1_2018 *100) / totalContinent_2018);
+    var continentTotalAfrica = Math.round((continent1_2018 *100) / totalContinent_2018);
     var continentTotalSouthAmerica: number = Math.round((continent2_2018 *100) / totalContinent_2018);
     var continentTotalEurope: number = Math.round((continent3_2018 *100) / totalContinent_2018);
     var continentTotalNorthAmerica: number = Math.round((continent4_2018 *100) / totalContinent_2018);
@@ -44,7 +44,24 @@ namespace Aufgabe06 {
     var continent5_2008_2018: number = Math.round(continent5_2018 - continent5_2008);
     var continent6_2008_2018: number = Math.round(continent6_2018 - continent6_2008);
 
+    window.addEventListener("load", handlefunction) 
+        function handlefunction(): void{
+        document.querySelector(".africa").addEventListener("click", function() { myFunction(continent1, continent1_2018)});
+
+    }
+
+
+    function myFunction(continent:string, number2018:number): void {
+        document.querySelector(".nameContinent").innerHTML = continent;
+        document.querySelector("#emissionNumber").innerHTML = number2018.toString();
+        Balken();
+    }
+
+    function Balken
+
+    //atribute
 
 
 
 
+}

@@ -44,45 +44,7 @@ namespace Aufgabe06 {
     var continent5_2008_2018: number = Math.round(continent5_2018 - continent5_2008);
     var continent6_2008_2018: number = Math.round(continent6_2018 - continent6_2008);
 
-    //Elemente selektieren, mit denen soll etwas gemacht werden
-    const myBtn1: HTMLButtonElement = document.getElementById("EuropaBild") as HTMLButtonElement;
-    const textElement1: HTMLParagraphElement = document.getElementById("emissionNumber") as HTMLParagraphElement;
 
-    //EventListenrr reagiert auf "click" eines Element
-    myBtn1.addEventListener("click", function(): void {
-        emissionNumberEurope(europe2018);
-    });
-
-    function emissionNumberEurope (europe2018) {
-        document.getElementById("emissionNumber").innerHTML = "4209.3";
-    }
-
-
-    const myBtn2: HTMLButtonElement = document.getElementById("NorthAmericaBild") as HTMLButtonElement;
-    const textElement2: HTMLParagraphElement = document.getElementById("emissionNumber") as HTMLParagraphElement;
-
-    myBtn2.addEventListener("click", function(): void {
-        emissionNumberNorthAmerica(northAmerica2018)
-    });
-
-    function emissionNumberNorthAmerica (northAmerica2018) {
-        document.getElementById("emissionNumber").innerHTML = "6035.6";
-    }
-
-    //const myBtn1: HTMLInputElement = document.getElementById("EuropaBild") as HTMLInputElement;
-        //myBtn1.addEventListener("click", function (): void {
-            //document.getElementById("emissionText").innerText = "Emission absolute of Europe in 2018";
-           // });
-    ;
-
-    //const myBtn2: HTMLInputElement = document.getElementById("btn2") as HTMLInputElement;
-            //myBtn2.addEventListener("click", function(): void {
-                //document.getElementById("emissionText").innerText = "Emission absolute of North America in 2018"
-            //});
-}
-
-
-//function () {}
 
 
 

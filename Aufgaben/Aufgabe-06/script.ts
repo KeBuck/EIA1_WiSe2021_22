@@ -44,6 +44,7 @@ namespace Aufgabe06 {
     var continent5_2008_2018: number = Math.round(continent5_2018 - continent5_2008);
     var continent6_2008_2018: number = Math.round(continent6_2018 - continent6_2008);
 
+
     window.addEventListener("load", handlefunction) 
         function handlefunction(): void {
         document.querySelector(".africa").addEventListener("click", function() { emission (continent1, continent1_2018, continentTotalAfrica, Africa2008_2018, continent1_2008_2018)});

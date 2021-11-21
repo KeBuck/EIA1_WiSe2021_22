@@ -40,10 +40,10 @@ var Aufgabe06;
     window.addEventListener("load", handlefunction);
     function handlefunction() {
         document.querySelector(".africa").addEventListener("click", function () { emission(continent1, continent1_2018, continentTotalAfrica, Africa2008_2018, continent1_2008_2018); });
-        document.querySelector(".southamerica.").addEventListener("click", function () { emission(continent2, continent2_2018, continentTotalSouthAmerica, SouthAmerica2008_2018, continent2_2008_2018); });
+        document.querySelector(".southamerica").addEventListener("click", function () { emission(continent2, continent2_2018, continentTotalSouthAmerica, SouthAmerica2008_2018, continent2_2008_2018); });
         document.querySelector(".europe").addEventListener("click", function () { emission(continent3, continent3_2018, continentTotalEurope, Europe2008_2018, continent3_2008_2018); });
         document.querySelector(".northamerica").addEventListener("click", function () { emission(continent4, continent4_2018, continentTotalNorthAmerica, NorthAmerica2008_2018, continent3_2008_2018); });
-        document.querySelector("asia").addEventListener("click", function () { emission(continent5, continent5_2018, continentTotalAsia, Asia2008_2018, continent5_2008_2018); });
+        document.querySelector(".asia").addEventListener("click", function () { emission(continent5, continent5_2018, continentTotalAsia, Asia2008_2018, continent5_2008_2018); });
         document.querySelector(".australia").addEventListener("click", function () { emission(continent6, continent6_2018, continentTotalAustralia, Austrilia2008_2018, continent6_2008_2018); });
     }
     function emission(continent, number2018, relativecontinent, percentagenumber, absolutecontinent) {

@@ -53,7 +53,7 @@ namespace Aufgabe06 {
 
     function myFunction(continent:string, number2018:number): void {
         document.querySelector(".nameContinent").innerHTML = continent;
-        document.querySelector("#emissionNumber").innerHTML = number2018.toString();
+        document.querySelector(".emissionNumber").innerHTML = number2018.toString();
         Balken();
     }
 

@@ -43,7 +43,7 @@ var Aufgabe06;
     }
     function myFunction(continent, number2018) {
         document.querySelector(".nameContinent").innerHTML = continent;
-        document.querySelector("#emissionNumber").innerHTML = number2018.toString();
+        document.querySelector(".emissionNumber").innerHTML = number2018.toString();
         Balken();
     }
     //atribute

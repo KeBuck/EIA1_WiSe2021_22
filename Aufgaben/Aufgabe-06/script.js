@@ -37,12 +37,6 @@ var Aufgabe06;
     var continent4_2008_2018 = Math.round(continent4_2018 - continent4_2008);
     var continent5_2008_2018 = Math.round(continent5_2018 - continent5_2008);
     var continent6_2008_2018 = Math.round(continent6_2018 - continent6_2008);
-    var xValues = ["Total", "Europe"];
-    var yValues = [totalContinent_2018, continentTotalEurope];
-    var barColors = [
-        "rgba (255, 255, 255, 0.5)",
-        "rgba (255, 255, 255, 1.0)"
-    ];
     window.addEventListener("load", handlefunction);
     function handlefunction() {
         document.querySelector(".africa").addEventListener("click", function () { emission(continent1, continent1_2018, continentTotalAfrica, Africa2008_2018, continent1_2008_2018); });
@@ -58,29 +52,7 @@ var Aufgabe06;
         document.querySelector(".relativeTotal").innerHTML = relativecontinent.toString();
         document.querySelector(".percentageNumber").innerHTML = percentagenumber.toString();
         document.querySelector(".absoluteNumber").innerHTML = absolutecontinent.toString();
-        //Balken();
+        document.querySelector(".myChart").setAttribute("style", "height:" + (number2018 / totalContinent_2018) * 100 + "%");
     }
-    new Chart("myChart", {
-        type: "bar",
-        data: {
-            labels: xValues,
-            datasets: [{
-                    backgroundColor: barColors,
-                    data: yValues
-                }]
-        },
-        options: {
-            legend: { display: false },
-            scales: {
-                yAxes: [{
-                        ticks: {
-                            beginAtZero: true
-                        }
-                    }],
-            }
-        }
-    });
-    //function Balken
-    //atribute
 })(Aufgabe06 || (Aufgabe06 = {}));
 //# sourceMappingURL=script.js.map

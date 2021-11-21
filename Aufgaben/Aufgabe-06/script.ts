@@ -44,12 +44,6 @@ namespace Aufgabe06 {
     var continent5_2008_2018: number = Math.round(continent5_2018 - continent5_2008);
     var continent6_2008_2018: number = Math.round(continent6_2018 - continent6_2008);
 
-    var xValues = ["Total", "Europe"];
-    var yValues = [totalContinent_2018, continentTotalEurope];
-    var barColors = [
-        "rgba (255, 255, 255, 0.5)",
-        "rgba (255, 255, 255, 1.0)"
-    ];
 
 
     window.addEventListener("load", handlefunction) 
@@ -69,33 +63,10 @@ namespace Aufgabe06 {
         document.querySelector(".relativeTotal").innerHTML = relativecontinent.toString();
         document.querySelector(".percentageNumber").innerHTML = percentagenumber.toString();
         document.querySelector(".absoluteNumber").innerHTML = absolutecontinent.toString();
-        //Balken();
+        
+        document.querySelector(".myChart").setAttribute("style", "height:" + (number2018 / totalContinent_2018) *100 + "%");
     }
 
-    new Chart ("myChart", {
-        type: "bar",
-        data: {
-            labels: xValues,
-            datasets: [{
-                backgroundColor: barColors,
-                data: yValues
-            }]
-        },
-        options: {
-            legend: {display: false},
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero: true
-                    }
-                }],
-            }
-        }
-    });
-
-    //function Balken
-
-    //atribute
 
 
 

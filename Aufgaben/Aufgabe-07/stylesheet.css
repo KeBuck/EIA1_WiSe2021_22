@@ -13,12 +13,19 @@ body {
 
 #button1 {
     position: absolute;
-    top: 50px;
-    left: 100px;
     width: 155px;
     height: 155px;
+    border-radius: 10px;
     border: none;
-    background-color: rgba(51, 133, 233, 0.5);
+    background-color: rgba(50, 103, 168, 0.75);
     cursor: pointer;
+}
+
+#button1:hover {
+    background-color: rgba(51, 133, 233, 1.0);
+}
+
+#button1:active {
+    border: white;
 }
 

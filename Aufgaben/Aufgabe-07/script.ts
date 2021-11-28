@@ -14,8 +14,8 @@ window.addEventListener("load", function () {
     document.querySelector("#button4").addEventListener("click", function () {soundPlay ("assets/G.mp3")});
     document.querySelector("#button5").addEventListener("click", function () {soundPlay ("assets/hihat.mp3")});
     document.querySelector("#button6").addEventListener("click", function () {soundPlay ("assets/kick.mp3")});
-    document.querySelector("#button7").addEventListener("click", function () {soundPlay ("assets/laugh-1.mp3")});
-    document.querySelector("#button8").addEventListener("click", function () {soundPlay ("assets/laugh-2.mp3")});
-    document.querySelector("#button9").addEventListener("click", function () {soundPlay ("assets/snare.mp3")});
+    document.querySelector("#button7").addEventListener("click", function () {soundPlay ("assets/snare.mp3")});
+    document.querySelector("#button8").addEventListener("click", function () {soundPlay ("assets/laugh-1.mp3")});
+    document.querySelector("#button9").addEventListener("click", function () {soundPlay ("assets/laugh-2.mp3")});
 
 });

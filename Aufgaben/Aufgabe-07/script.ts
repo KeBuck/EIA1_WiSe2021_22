@@ -1,6 +1,5 @@
 var sound:HTMLAudioElement [] = [new Audio('assets/A.mp3'), new Audio('assets/C.mp3'), new Audio('assets/F.mp3'), new Audio('assets/G.mp3'), new Audio('assets/hihat.mp3'), new Audio('assets/kick.mp3'), new Audio ('assets/laugh-1.mp3'), new Audio('assets/laugh-2.mp3'), new Audio('assets/snare.mp3')];
 
-var key: number = 0;
 
 function soundPlay (audioMP3: string) {
      var beat:HTMLAudioElement = new Audio (audioMP3);
@@ -18,4 +17,19 @@ window.addEventListener("load", function () {
     document.querySelector("#button8").addEventListener("click", function () {soundPlay ("assets/laugh-1.mp3")});
     document.querySelector("#button9").addEventListener("click", function () {soundPlay ("assets/laugh-2.mp3")});
 
+});
+
+
+var beats:HTMLAudioElement [] = [sound [4], sound [5], sound [8]];
+
+var key: number = 4;
+
+function playButton () {
+    console.log(beats[key]);
+    key++;
+
+}
+
+window.addEventListener("load", function () {
+    document.querySelector(".playButton").addEventListener("click", playButton);
 });

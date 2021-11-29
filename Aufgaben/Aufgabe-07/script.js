@@ -21,8 +21,11 @@ function repeat() {
     trigger = setInterval(playButton, 1000);
 }
 function playButton() {
-    console.log(beats[key]);
     key++;
+    if (key >= beats.length) {
+        key = 0;
+    }
+    console.log(beats[key]);
 }
 window.addEventListener("load", function () {
     document.querySelector(".playButton").addEventListener("click", repeat);

@@ -30,8 +30,12 @@ function repeat () {
 }
 
 function playButton () {
-    console.log(beats[key]);
     key++;
+    if (key >= beats.length) {
+        key = 0;
+    }
+
+    console.log(beats[key]);
 
 }
 

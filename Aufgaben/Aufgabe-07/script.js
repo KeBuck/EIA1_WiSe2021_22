@@ -16,11 +16,15 @@ window.addEventListener("load", function () {
 });
 var beats = [sound[4], sound[5], sound[8]];
 var key = 0;
+var trigger;
+function repeat() {
+    trigger = setInterval(playButton, 1000);
+}
 function playButton() {
     console.log(beats[key]);
     key++;
 }
 window.addEventListener("load", function () {
-    document.querySelector(".playButton").addEventListener("click", playButton);
+    document.querySelector(".playButton").addEventListener("click", repeat);
 });
 //# sourceMappingURL=script.js.map

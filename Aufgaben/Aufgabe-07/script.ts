@@ -23,6 +23,11 @@ window.addEventListener("load", function () {
 var beats:HTMLAudioElement [] = [sound [4], sound [5], sound [8]];
 
 var key: number = 0;
+var trigger;
+
+function repeat () {
+    trigger = setInterval(playButton, 1000);
+}
 
 function playButton () {
     console.log(beats[key]);
@@ -31,5 +36,5 @@ function playButton () {
 }
 
 window.addEventListener("load", function () {
-    document.querySelector(".playButton").addEventListener("click", playButton);
+    document.querySelector(".playButton").addEventListener("click", repeat);
 });

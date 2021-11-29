@@ -22,7 +22,7 @@ window.addEventListener("load", function () {
 
 var beats:HTMLAudioElement [] = [sound [4], sound [5], sound [8]];
 
-var key: number = 4;
+var key: number = 0;
 
 function playButton () {
     console.log(beats[key]);

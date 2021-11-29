@@ -14,7 +14,7 @@ window.addEventListener("load", function () {
     document.querySelector("#button8").addEventListener("click", function () { soundPlay("assets/laugh-1.mp3"); });
     document.querySelector("#button9").addEventListener("click", function () { soundPlay("assets/laugh-2.mp3"); });
 });
-var beats = [new Audio('assets/hihat.mp3'), new Audio('assets/kick.mp3'), new Audio('assets/snare.mp3')];
+var beats = [sound[4], sound[5], sound[8]];
 var key = 0;
 function playButton() {
     console.log(beats[key]);

@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: #000000;
 }
 
 .drumPad {
@@ -8,7 +8,7 @@ body {
     width: 480px;
     height: 480px;
     top: 50px;
-    background-color: black;
+    background-color: #000000;
 }
 
 #button1 {
@@ -17,16 +17,16 @@ body {
     height: 155px;
     border-radius: 10px;
     border: none;
-    background-color: rgba(50, 103, 168, 0.75);
+    background-color:#3267a8bf;
     cursor: pointer;
 }
 
 #button1:hover {
-    background-color: rgba(51, 133, 233, 1.0);
+    background-color: #3385e9;
 }
 
 #button1:active {
-    border: white;
+    border: #ffffff;
 }
 
 #button2 {
@@ -36,16 +36,16 @@ body {
     height: 155px;
     border-radius: 10px;
     border: none;
-    background-color: rgba(50, 103, 168, 0.75);
+    background-color: #3267a8bf;
     cursor: pointer;
 }
 
 #button2:hover {
-    background-color: rgba(51, 133, 233, 1.0);
+    background-color: #3385e9;
 }
 
 #button2:active {
-    border: white;
+    border: #ffffff;
 }
 
 #button3 {
@@ -55,16 +55,16 @@ body {
     left: 330px;
     border-radius: 10px;
     border: none;
-    background-color: rgba(50, 103, 168, 0.75);
+    background-color: #3267a8bf;
     cursor: pointer;
 }
 
 #button3:hover {
-    background-color: rgba(51, 133, 233, 1.0);
+    background-color: #3385e9;
 }
 
 #button3:active {
-    border: white;
+    border: #ffffff;
 }
 
 #button4 {
@@ -74,16 +74,16 @@ body {
     top: 165px;
     border-radius: 10px;
     border: none;
-    background-color: rgba(245, 36, 144, 0.75);
+    background-color: #f52490bf;
     cursor: pointer;
 }
 
 #button4:hover {
-    background-color: rgba(245, 36, 144, 1.0);
+    background-color: #f52490;
 }
 
 #button4:active {
-    border: white;
+    border: #ffffff;
 }
 
 #button5 {
@@ -94,16 +94,16 @@ body {
     left: 165px;
     border-radius: 10px;
     border: none;
-    background-color: rgba(245, 36, 144, 0.75);
+    background-color: #f52490bf;
     cursor: pointer;
 }
 
 #button5:hover {
-    background-color: rgba(245, 36, 144, 1.0);
+    background-color: #f52490;
 }
 
 #button5:active {
-    border: white;
+    border: #ffffff;
 }
 
 #button6 {
@@ -114,16 +114,16 @@ body {
     left: 330px;
     border-radius: 10px;
     border: none;
-    background-color: rgba(245, 36, 144, 0.75);
+    background-color: #f52490bf;
     cursor: pointer;
 }
 
 #button6:hover {
-    background-color: rgba(245, 36, 144, 1.0);
+    background-color: #f52490;
 }
 
 #button6:active {
-    border: white;
+    border: #ffffff;
 }
 
 #button7 {
@@ -133,16 +133,16 @@ body {
     top: 330px;
     border-radius: 10px;
     border: none;
-    background-color: rgba(245, 36, 144, 0.75);
+    background-color: #f52490bf;
     cursor: pointer;
 }
 
 #button7:hover {
-    background-color: rgba(245, 36, 144, 1.0);
+    background-color: #f52490;
 }
 
 #button7:active {
-    border: white;
+    border: #ffffff;
 }
 
 #button8 {
@@ -153,16 +153,16 @@ body {
     left: 165px;
     border-radius: 10px;
     border: none;
-    background-color: rgba(249, 135, 6, 0.75);
+    background-color: #f98706bf;
     cursor: pointer;
 }
 
 #button8:hover {
-    background-color: rgba(249, 135, 6, 1.0);
+    background-color: #f98706;
 }
 
 #button8:active {
-    border: white;
+    border: #ffffff;
 }
 
 #button9 {
@@ -173,14 +173,29 @@ body {
     left: 330px;
     border-radius: 10px;
     border: none;
-    background-color: rgba(249, 135, 6, 0.75);
+    background-color: #f98706bf;
     cursor: pointer;
 }
 
 #button9:hover {
-    background-color: rgba(249, 135, 6, 1.0);
+    background-color: #f98706;
 }
 
 #button9:active {
-    border: white;
+    border: #ffffff;
+}
+
+#playButton {
+    position: absolute;
+    top: 575px;
+    left: 695px;
+    opacity: 0.75;
+}
+
+#playButton:hover {
+    opacity: 1.0;
+}
+
+#playButton:active {
+    scale: 1.5;
 }

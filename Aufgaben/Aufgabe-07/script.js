@@ -25,7 +25,8 @@ function playButton() {
     if (key >= beats.length) {
         key = 0;
     }
-    console.log(beats[key]);
+    //console.log(beats[key]);
+    beats[key].play();
 }
 window.addEventListener("load", function () {
     document.querySelector(".playButton").addEventListener("click", repeat);

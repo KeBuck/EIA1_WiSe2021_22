@@ -20,7 +20,7 @@ window.addEventListener("load", function () {
 });
 
 
-var beats:HTMLAudioElement [] = [sound [4], sound [5], sound [8]];
+var beats:HTMLAudioElement [] = [new Audio('assets/hihat.mp3'), new Audio('assets/kick.mp3'), new Audio('assets/snare.mp3')];
 
 var key: number = 0;
 

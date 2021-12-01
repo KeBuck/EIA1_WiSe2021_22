@@ -1,0 +1,201 @@
+body {
+    background-color: #000000;
+}
+
+.drumPad {
+    position: relative;
+    margin: auto;
+    width: 480px;
+    height: 480px;
+    top: 50px;
+    background-color: #000000;
+}
+
+#button1 {
+    position: absolute;
+    width: 155px;
+    height: 155px;
+    border-radius: 10px;
+    border: none;
+    background-color:#3267a8bf;
+    cursor: pointer;
+}
+
+#button1:hover {
+    background-color: #3385e9;
+}
+
+#button1:active {
+    border: #ffffff;
+}
+
+#button2 {
+    position: absolute;
+    left: 165px;
+    width: 155px;
+    height: 155px;
+    border-radius: 10px;
+    border: none;
+    background-color: #3267a8bf;
+    cursor: pointer;
+}
+
+#button2:hover {
+    background-color: #3385e9;
+}
+
+#button2:active {
+    border: #ffffff;
+}
+
+#button3 {
+    position: absolute;
+    width: 155px;
+    height: 155px;
+    left: 330px;
+    border-radius: 10px;
+    border: none;
+    background-color: #3267a8bf;
+    cursor: pointer;
+}
+
+#button3:hover {
+    background-color: #3385e9;
+}
+
+#button3:active {
+    border: #ffffff;
+}
+
+#button4 {
+    position: absolute;
+    width: 155px;
+    height: 155px;
+    top: 165px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f52490bf;
+    cursor: pointer;
+}
+
+#button4:hover {
+    background-color: #f52490;
+}
+
+#button4:active {
+    border: #ffffff;
+}
+
+#button5 {
+    position: absolute;
+    width: 155px;
+    height: 155px;
+    top: 165px;
+    left: 165px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f52490bf;
+    cursor: pointer;
+}
+
+#button5:hover {
+    background-color: #f52490;
+}
+
+#button5:active {
+    border: #ffffff;
+}
+
+#button6 {
+    position: absolute;
+    width: 155px;
+    height: 155px;
+    top: 165px;
+    left: 330px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f52490bf;
+    cursor: pointer;
+}
+
+#button6:hover {
+    background-color: #f52490;
+}
+
+#button6:active {
+    border: #ffffff;
+}
+
+#button7 {
+    position: absolute;
+    width: 155px;
+    height: 155px;
+    top: 330px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f52490bf;
+    cursor: pointer;
+}
+
+#button7:hover {
+    background-color: #f52490;
+}
+
+#button7:active {
+    border: #ffffff;
+}
+
+#button8 {
+    position: absolute;
+    width: 155px;
+    height: 155px;
+    top: 330px;
+    left: 165px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f98706bf;
+    cursor: pointer;
+}
+
+#button8:hover {
+    background-color: #f98706;
+}
+
+#button8:active {
+    border: #ffffff;
+}
+
+#button9 {
+    position: absolute;
+    width: 155px;
+    height: 155px;
+    top: 330px;
+    left: 330px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f98706bf;
+    cursor: pointer;
+}
+
+#button9:hover {
+    background-color: #f98706;
+}
+
+#button9:active {
+    border: #ffffff;
+}
+
+#playButton {
+    position: absolute;
+    top: 575px;
+    left: 695px;
+    opacity: 0.75;
+}
+
+#playButton:hover {
+    opacity: 1.0;
+}
+
+#playButton:active {
+    scale: 1.5;
+}

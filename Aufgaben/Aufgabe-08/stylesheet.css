@@ -188,8 +188,10 @@ body {
 #playButton {
     position: absolute;
     top: 575px;
-    left: 695px;
+    left: 730px;
     opacity: 0.75;
+    width: 80px;
+    height: 80px;
 }
 
 #playButton:hover {
@@ -198,4 +200,60 @@ body {
 
 #playButton:active {
     scale: 1.5;
+}
+
+#stopHidden {
+    position: absolute;
+    top: 575px;
+    left: 725px;
+    width: 80px;
+    height: 80px;
+    opacity: 0.75;
+}
+
+#stopHidden:hover {
+    opacity: 1.0;
+}
+
+#stopHidden:active {
+    scale: 1.5;
+}
+
+#trashButton {
+    position: absolute;
+    top: 575px;
+    left: 895px;
+    width: 80px;
+    height: 80px;
+    opacity: 0.75;
+}
+
+#trashButton:hover {
+    opacity: 1.0;
+}
+
+#trashButton:active {
+    scale: 1.5;
+}
+
+#shuffleButton {
+    position: absolute;
+    top: 575px;
+    left: 560px;
+    width: 80px;
+    height: 80px;
+    opacity: 0.75;
+}
+
+#shuffleButton:hover {
+    opacity: 1.0;
+}
+
+#shuffleButton:active {
+    scale: 1.5;
+}
+
+
+.is-hidden {
+    display: none !important;
 }

@@ -41,9 +41,13 @@ var aufgabe08;
         //console.log(beats[key]);
         beats[key].play();
     }
-    //Playtastenfunktion zum Abspielen der Audios aus dem Array
+    //Playtastenfunktion zum Abspielen der Audios aus dem Array und Stop
     window.addEventListener("load", function () {
         document.querySelector(".playButton").addEventListener("click", repeat);
+        document.querySelector("#stopHidden").addEventListener("click", function () {
+            clearInterval(trigger);
+            console.log("stop");
+        });
     });
     window.addEventListener("load", function () {
         document.querySelector("#playButton").addEventListener("click", function () {
@@ -54,7 +58,20 @@ var aufgabe08;
             document.querySelector("#stopHidden").classList.add("is-hidden");
             document.querySelector("#playButton").classList.remove("is-hidden");
         });
+        document.querySelector("#trashButton").addEventListener("click", function () {
+            beats = [];
+            console.log("löschen");
+        });
+        document.querySelector("shuffleButton").addEventListener("click", function () {
+            var playMaschine = setInterval(, {
+                //playSound(sound[key]);
+                //key = Math.floor(Math.random () *9);
+                console: console,
+                : .log(key)
+            }, 500);
+        });
     });
 })(aufgabe08 || (aufgabe08 = {}));
+;
 ;
 //# sourceMappingURL=script.js.map

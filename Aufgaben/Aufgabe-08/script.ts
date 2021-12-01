@@ -53,10 +53,17 @@ namespace aufgabe08 {
 
     }
 
-    //Playtastenfunktion zum Abspielen der Audios aus dem Array
+    //Playtastenfunktion zum Abspielen der Audios aus dem Array und Stop
     window.addEventListener("load", function () {
         document.querySelector(".playButton").addEventListener("click", repeat);
+
+        document.querySelector("#stopHidden").addEventListener("click", function (): void {
+            clearInterval(trigger);
+            console.log("stop");
+        });
     });
+
+
 
     window.addEventListener("load", function () {
         document.querySelector("#playButton").addEventListener("click", function (): void {
@@ -69,7 +76,23 @@ namespace aufgabe08 {
             document.querySelector("#playButton").classList.remove("is-hidden");
         });
 
+        document.querySelector("#trashButton").addEventListener("click", function (): void {
+            beats = [];
 
+            console.log ("löschen");
+        });
+
+        document.querySelector("shuffleButton").addEventListener("click", function (): void {
+
+            var playMaschine:any = setInterval(function (): void: {
+                //playSound(sound[key]);
+                
+                //key = Math.floor(Math.random () *9);
+
+                console.log (key);},
+                500);
+            });
+        });
         
     });
 

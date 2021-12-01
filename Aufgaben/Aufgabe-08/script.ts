@@ -69,7 +69,7 @@ namespace aufgabe08 {
             document.querySelector("#playButton").classList.remove("is-hidden");
         });
 
-        
+
         
     });
 

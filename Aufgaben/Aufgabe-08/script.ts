@@ -1,5 +1,5 @@
 namespace aufgabe08 {
-    
+
     //die Audios als Varianten in Arrayform definieren
     var sound:HTMLAudioElement [] = [new Audio('assets/A.mp3'), new Audio('assets/C.mp3'), new Audio('assets/F.mp3'), new Audio('assets/G.mp3'), new Audio('assets/hihat.mp3'), new Audio('assets/kick.mp3'), new Audio ('assets/laugh-1.mp3'), new Audio('assets/laugh-2.mp3'), new Audio('assets/snare.mp3')];
 
@@ -56,6 +56,21 @@ namespace aufgabe08 {
     //Playtastenfunktion zum Abspielen der Audios aus dem Array
     window.addEventListener("load", function () {
         document.querySelector(".playButton").addEventListener("click", repeat);
+    });
+
+    window.addEventListener("load", function () {
+        document.querySelector("#playButton").addEventListener("click", function (): void {
+            document.querySelector("#playButton").classList.add("is-hidden");
+            document.querySelector("#stopHidden").classList.remove("is-hidden");
+        });
+
+        document.querySelector("#stopHidden").addEventListener("click", function (): void {
+            document.querySelector("#stopHidden").classList.add("is-hidden");
+            document.querySelector("#playButton").classList.remove("is-hidden");
+        });
+
+        
+        
     });
 
 };

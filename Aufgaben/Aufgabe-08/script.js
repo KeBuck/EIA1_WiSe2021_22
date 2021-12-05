@@ -63,15 +63,13 @@ var aufgabe08;
             console.log("löschen");
         });
         document.querySelector("shuffleButton").addEventListener("click", function () {
-            var playMaschine = setInterval(, {
-                //playSound(sound[key]);
-                //key = Math.floor(Math.random () *9);
-                console: console,
-                : .log(key)
+            var playMaschine = setInterval(function () {
+                sound[key].play();
+                key = Math.floor(Math.random() * 9);
+                console.log(key);
             }, 500);
         });
     });
 })(aufgabe08 || (aufgabe08 = {}));
-;
 ;
 //# sourceMappingURL=script.js.map

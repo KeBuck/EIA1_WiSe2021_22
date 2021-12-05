@@ -84,15 +84,16 @@ namespace aufgabe08 {
 
         document.querySelector("shuffleButton").addEventListener("click", function (): void {
 
-            var playMaschine:any = setInterval(function (): void: {
+            var playMaschine: number = setInterval(function (): void {
                 sound[key].play ();
                 
                 key = Math.floor(Math.random () *9);
 
-                console.log (key),
-                500)};
+                console.log (key);
+                },
+                500);
             });
-        };
+        });
     };    
     
 

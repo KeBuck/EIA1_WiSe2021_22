@@ -63,7 +63,7 @@ var aufgabe08;
             beats = [];
             console.log("löschen");
         });
-        document.querySelector("shuffleButton").addEventListener("click", function () {
+        document.querySelector("#shuffleButton").addEventListener("click", function () {
             var playMaschine = setInterval(function () {
                 soundPlay(allSounds[key]);
                 key = Math.floor(Math.random() * 9);

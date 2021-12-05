@@ -84,7 +84,7 @@ namespace aufgabe08 {
             console.log ("löschen");
         });
 
-        document.querySelector("shuffleButton").addEventListener("click", function (): void {
+        document.querySelector("#shuffleButton").addEventListener("click", function (): void {
 
             var playMaschine: number = setInterval(function (): void {
                 soundPlay( allSounds [key] );

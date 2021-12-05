@@ -49,6 +49,7 @@ var aufgabe08;
             console.log("stop");
         });
     });
+    var allSounds = ["assets/A.mp3", "assets/C.mp3", "assets/F.mp3", "assets/G.mp3", "assets/hihat.mp3", "assets/kick.mp3", "assets/laugh-1.mp3", "assets/laugh-2.mp3", "assets/snare.mp3"];
     window.addEventListener("load", function () {
         document.querySelector("#playButton").addEventListener("click", function () {
             document.querySelector("#playButton").classList.add("is-hidden");
@@ -64,7 +65,7 @@ var aufgabe08;
         });
         document.querySelector("shuffleButton").addEventListener("click", function () {
             var playMaschine = setInterval(function () {
-                sound[key].play();
+                soundPlay(sound[key]);
                 key = Math.floor(Math.random() * 9);
                 console.log(key);
             }, 500);

@@ -63,6 +63,8 @@ namespace aufgabe08 {
         });
     });
 
+    var allSounds:string [] = ["assets/A.mp3", "assets/C.mp3", "assets/F.mp3", "assets/G.mp3", "assets/hihat.mp3", "assets/kick.mp3", "assets/laugh-1.mp3", "assets/laugh-2.mp3", "assets/snare.mp3"];
+
 
 
     window.addEventListener("load", function () {
@@ -85,7 +87,7 @@ namespace aufgabe08 {
         document.querySelector("shuffleButton").addEventListener("click", function (): void {
 
             var playMaschine: number = setInterval(function (): void {
-                sound[key].play ();
+                soundPlay( sound [key] );
                 
                 key = Math.floor(Math.random () *9);
 

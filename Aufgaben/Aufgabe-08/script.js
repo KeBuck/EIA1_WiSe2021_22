@@ -65,7 +65,7 @@ var aufgabe08;
         });
         document.querySelector("shuffleButton").addEventListener("click", function () {
             var playMaschine = setInterval(function () {
-                soundPlay(sound[key]);
+                soundPlay(allSounds[key]);
                 key = Math.floor(Math.random() * 9);
                 console.log(key);
             }, 500);

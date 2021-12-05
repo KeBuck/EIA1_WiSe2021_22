@@ -87,7 +87,7 @@ namespace aufgabe08 {
         document.querySelector("shuffleButton").addEventListener("click", function (): void {
 
             var playMaschine: number = setInterval(function (): void {
-                soundPlay( sound [key] );
+                soundPlay( allSounds [key] );
                 
                 key = Math.floor(Math.random () *9);
 

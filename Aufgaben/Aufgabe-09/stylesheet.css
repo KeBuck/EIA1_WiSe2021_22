@@ -45,3 +45,15 @@ div.totalNumber #total {
     height: 50px;
 }
 
+#addButton {
+    font-size: 30px;
+    position: relative;
+    left: 60%;
+    top: 200px;
+}
+
+#addButton:hover {
+    opacity: 50%;
+    transform: scale(1.2);
+}
+

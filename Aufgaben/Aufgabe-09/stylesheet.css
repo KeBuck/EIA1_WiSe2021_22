@@ -65,3 +65,10 @@ div.totalNumber #total {
     background-color: blanchedalmond;
     width: 500px;
 }
+
+.to-do-list {
+    min-width: 30%;
+    list-style: none;
+    align-items: center;
+}
+

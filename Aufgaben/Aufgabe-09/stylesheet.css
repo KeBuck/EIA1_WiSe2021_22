@@ -11,3 +11,10 @@ body {
     height: 70px;
     border: solid 3px rgb(219, 201, 173);
 }
+
+#headline {
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px 30px;
+}
+

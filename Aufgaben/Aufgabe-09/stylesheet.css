@@ -18,3 +18,13 @@ body {
     margin: 5px 30px;
 }
 
+div.totalNumber #total {
+    position: relative;
+    margin-left: 46%;
+    top: 120px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(219, 201, 173);
+    font-weight: 500;
+}
+

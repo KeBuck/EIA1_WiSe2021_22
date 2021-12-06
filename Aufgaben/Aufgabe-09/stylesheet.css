@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+.headlineBox {
+    position: absolute;
+    background-color: blanchedalmond;
+    left: 40%;
+    top: 50px;
+    width: 260px;
+    height: 70px;
+    border: solid 3px rgb(219, 201, 173);
+}

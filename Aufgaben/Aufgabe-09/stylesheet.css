@@ -57,3 +57,11 @@ div.totalNumber #total {
     transform: scale(1.2);
 }
 
+.toDoContainer {
+    display: flex;
+    position: relative;
+    top: 220px;
+    left: 75%;
+    background-color: blanchedalmond;
+    width: 500px;
+}

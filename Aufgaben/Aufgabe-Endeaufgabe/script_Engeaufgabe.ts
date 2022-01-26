@@ -254,11 +254,6 @@ window.addEventListener("load", function(): void {
                            
             }
         }
-        
-
-                    
-                       
-                        
                        
 
         //überprüfen ob die Karte Stapel von Computer Gegern ist leer

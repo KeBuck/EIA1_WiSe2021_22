@@ -185,14 +185,14 @@ window.addEventListener("load", function(): void {
     console.log(cardTotal)
 
     //Teilen die Karten in computerGegner Stapel, spieler Stapel, Mitte Stapel und Rest Stapel
-    let cardsPlayer = cardTotal.slice(0, 4);
-    let cardsComputer = cardTotal.slice(0, 4);
-    let cardsMitte = cardTotal.splice(0, 0);
+    let cardsPlayer = cardTotal.splice(0, 5);
+    let cardsComputer = cardTotal.splice(0, 5);
+    let cardsMitte = cardTotal.splice(0, 1);
 
-    console.log(cardsPlayer);
-    console.log(cardsComputer);
-    console.log(cardsMitte);
-    console.log(cardTotal);
+    //console.log(cardsPlayer);
+    //console.log(cardsComputer);
+    //console.log(cardsMitte);
+    //console.log(cardTotal);
 
     //Funktionen die in Computer Gegner passiert
     var computerGegner () : void => {

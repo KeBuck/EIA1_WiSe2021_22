@@ -203,7 +203,7 @@ window.addEventListener("load", function () {
         var TopCardPlayed = cardsMitte.unshift(TryPlayCard); // currentCard ??
         //Vergleich ob die Karte gespielt ist gleich (Farbe oder Wert) als die erste Karte, die in der Mitte Stapel ist
         function TryPlayCard(givenCard) {
-            //Card currentTopCard = getTopCard();
+            //Card currentTopCard = getTopCard(); ????
             if (givenCard.color == currentTopCard.color || givenCard.wert == currentTopCard.wert) { //wo ich definiert die givenCard und die currentTopCard?
                 //Wenn die Karte ist Farbe oder Wert gleich, dann ist sie in die Mitte Stapel gezeigt
                 //pushCard(givenCard)

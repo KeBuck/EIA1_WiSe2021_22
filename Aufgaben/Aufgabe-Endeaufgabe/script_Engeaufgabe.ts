@@ -185,9 +185,9 @@ window.addEventListener("load", function(): void {
     console.log(cardTotal)
 
     //Teilen die Karten in computerGegner Stapel, spieler Stapel, Mitte Stapel und Rest Stapel
-    const cardsPlayer = cardTotal.slice(0, 4);
-    const cardsComputer = cardTotal.slice(5, 9);
-    const cardsMitte = cardTotal.splice(10, 10);
+    let cardsPlayer = cardTotal.slice(0, 4);
+    let cardsComputer = cardTotal.slice(0, 4);
+    let cardsMitte = cardTotal.splice(0, 0);
 
     console.log(cardsPlayer);
     console.log(cardsComputer);

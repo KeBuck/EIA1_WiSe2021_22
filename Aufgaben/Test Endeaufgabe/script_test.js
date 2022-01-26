@@ -143,9 +143,11 @@ window.addEventListener("load", function () {
     var cardsPlayer = cardTotal.slice(0, 5);
     var cardsComputer = cardTotal.slice(5, 10);
     var cardsMitte = cardTotal.splice(10, 1);
-    console.log(cardsPlayer);
-    console.log(cardsComputer);
-    console.log(cardsMitte);
-    console.log(cardTotal);
+    if (cardTotal.length > -1) {
+        console.log(cardsPlayer);
+        console.log(cardsComputer);
+        console.log(cardsMitte);
+        console.log(cardTotal);
+    }
 });
 //# sourceMappingURL=script_test.js.map

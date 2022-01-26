@@ -206,6 +206,10 @@ window.addEventListener("load", function(): void {
     //EventListener für Karten auf Töte Stapel nicht mehr angezeigt werden, wenn sie angeklick sind
     document.querySelector("#Karte 12").addEventListener("click", function(): void { document.getElementById("Karte12").style.display = "block"});
 
+    //Funktionen für die Spielleiter 
+    class spielLeiter {
+        
+    }
     
     //Funktionen die in Computer Gegner passiert
     class computerGegner {

@@ -141,7 +141,7 @@ window.addEventListener("load", function () {
     shuffleCards(cardTotal);
     //console.log(cardTotal);
     var cardsPlayer = cardTotal.slice(0, 5);
-    var cardsComputer = cardTotal.slice(5, 5);
+    var cardsComputer = cardTotal.slice(5, 9);
     var cardsMitte = cardTotal.splice(10, 1);
     console.log(cardsPlayer);
     console.log(cardsComputer);

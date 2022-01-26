@@ -214,53 +214,58 @@ window.addEventListener("load", function(): void {
 
     
     //Funktionen die in Computer Gegner passiert
-    var computerGegner () : void => {
+    class computerGegner {
 
         //erstellen die Array mit die Karten von den Computer
-
-        //Card [] ownCards;
-        const cardsComputer;
+    
+        cardsComputer: Cards[];
+        
+        constructor(pushedCards: Cards[])
+        {
+            cardsComputer = pushedCards;
+        }
         
         //funktion um die Karte in die Mitte zu spielen
-        function playCard(): boolean {
+        playCard(): boolean {
 
             //Vergleichen jede Karte in Computer Stapel mit die erste Karte, die in Mitte ist
-            cardsComputer.forEach(currentCard);
-
-            console.log(cardsComputer);
-
-                function currentCard () {
-                    if(mitteStapel.TryPlayCard == currentCard) {
-
-                    
-                        //Wenn die aktuell Karte von Computer Stapel ist gleich (true) als die Karte, die in Mitte Stapel is, dann die ist von den Stapel verschiebt.
-                        //const definiert die position in Array von die Karte, die in Mitte gespielt hat
-                        const index = cardsComputer.indexOf(currentCard);
-
-                        //Wenn die gespielte Karte ist in den Array 
-                        if (index > -1) {
-
-                           //Dann die Funktion lass sie weg von den Array durch die Nummer von ihre Position
-                           //index = Position die gespielte Karte und 1 =  lass nur ein item weg
-                            cardsComputer.splice(index, 1);
-                           
-                        }
-                        return true;
-    
-                    }
-                
-                    //Wenn die aktuell Karte von Computer Stapel nicht ist gleich (true) als die Karte, die in Mitte Stapel is, dann fang nochmal die Vergliechung an.
-                    return false;
+            for(let currentCard: Cards of cardsComputer)
+            {
+                if(cardsMitte.TryPlayCard(currentCard))
+                {
+                    this.removecard(currentCard);
+                    return true;
                 }
 
-                
+            }
+            return false;
         }
 
+        //Wenn die aktuell Karte von Computer Stapel ist gleich (true) als die Karte, die in Mitte Stapel is, dann die ist von den Stapel verschiebt.
+        //const definiert die position in Array von die Karte, die in Mitte gespielt hat
+        removecard(currentCard: Cards): void {
+            const index = cardsComputer.indexOf(currentCard);
+            
+            //Wenn die gespielte Karte ist in den Array
+            if (index > -1) {
+                //Dann die Funktion lass sie weg von den Array durch die Nummer von ihre Position
+                //index = Position die gespielte Karte und 1 =  lass nur ein item weg
+                cardsComputer.splice(index, 1);
+                           
+            }
+        }
+        
+
+                    
+                       
+                        
+                       
+
         //überprüfen ob die Karte Stapel von Computer Gegern ist leer
-        function cardsLeft() : boolean {
+        cardsLeft() : boolean {
 
             //Wenn die Stapel leer ist, dann hat den Computer Gegern den Spiel gewinnen
-            if(cardsComputer.length != 0) {
+            if(this.cardsComputer.length != 0) {
                 return true;
             }
             //Wenn die Stapel nicht leer ist, dann geht den Spiel weiter
@@ -269,34 +274,46 @@ window.addEventListener("load", function(): void {
             }
         }
 
-    };
+    }
 
     //Funktionen, die in die Mitte passieren
-    var mitteStapel () : void => {
+    class Mitte {
 
         //erstellen die Array mit die Karten von der Mitte
 
         //Card [] playedCards;
-        const cardsMitte;
+        cardsMitte: Cards[];
+        
+        constructor(firstCards: Cards[])
+        {
+            cardsMitte = firstCards;
+        }
+
 
         //Erkennt die erste Karte in der Mitte Stapel
 
-        //function getTopCard ();
-        var currentTopCard = cardsMitte.slice(0, 1).shift();
-        console.log(currentTopCard);
+        getTopCard () : void {
+            var currentTopCard = cardsMitte[cardsMitte.length - 1];
+            //console.log(currentTopCard);
+        }
 
         //Zeigt die gespielte Karte in der Mitte Stapel
 
         //function pushCard (TopCardLay);
-        var TopCardPlayed = cardsMitte.unshift(TryPlayCard); // currentCard ??
+        pushCard (): void {
+            var TopCardPlayed = cardsMitte.push(playCard); //welche parameter?
+        }
+        
 
         //Vergleich ob die Karte gespielt ist gleich (Farbe oder Wert) als die erste Karte, die in der Mitte Stapel ist
-        function TryPlayCard (givenCard) : boolean {
+        TryPlayCard () : boolean {
             
-            //Card currentTopCard = getTopCard(); ????
+            
+            let currentTopCard = this.getTopCard();
+            let givenCard = this.pushCard();
 
             
-            if(givenCard.color == currentTopCard.color || givenCard.wert == currentTopCard.wert) { //wo ich definiert die givenCard und die currentTopCard?
+            if(givenCard.color == currentTopCard.color || givenCard.wert == currentTopCard.wert) {
                 
                 //Wenn die Karte ist Farbe oder Wert gleich, dann ist sie in die Mitte Stapel gezeigt
                 //pushCard(givenCard)

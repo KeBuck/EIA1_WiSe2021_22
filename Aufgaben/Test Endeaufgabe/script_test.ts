@@ -183,14 +183,13 @@ window.addEventListener("load", function(): void {
     shuffleCards(cardTotal);
     //console.log(cardTotal);
 
-    const cardsPlayer = cardTotal.slice(0, 5);
-    const cardsComputer = cardTotal.slice(5, 10);
-    const cardsMitte = cardTotal.splice(10, 1);
-
-    if (cardTotal.length > -1) {
+    let cardsPlayer = cardTotal.splice(0, 5);
+    let cardsComputer = cardTotal.splice(0, 5);
+    let cardsMitte = cardTotal.splice(0, 1);
 
     console.log(cardsPlayer);
     console.log(cardsComputer);
     console.log(cardsMitte);
     console.log(cardTotal);
-})
+
+});

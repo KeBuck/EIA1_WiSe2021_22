@@ -140,14 +140,12 @@ window.addEventListener("load", function () {
     }
     shuffleCards(cardTotal);
     //console.log(cardTotal);
-    var cardsPlayer = cardTotal.slice(0, 5);
-    var cardsComputer = cardTotal.slice(5, 10);
-    var cardsMitte = cardTotal.splice(10, 1);
-    if (cardTotal.length > -1) {
-        console.log(cardsPlayer);
-        console.log(cardsComputer);
-        console.log(cardsMitte);
-        console.log(cardTotal);
-    }
+    var cardsPlayer = cardTotal.splice(0, 5);
+    var cardsComputer = cardTotal.splice(0, 5);
+    var cardsMitte = cardTotal.splice(0, 1);
+    console.log(cardsPlayer);
+    console.log(cardsComputer);
+    console.log(cardsMitte);
+    console.log(cardTotal);
 });
 //# sourceMappingURL=script_test.js.map

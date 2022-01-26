@@ -196,13 +196,15 @@ window.addEventListener("load", function(): void {
 
 
 
-    //EventListener für Karten auf Spieler Stapel nicht mehr angezeigt werden
+    //EventListener für Karten auf Spieler Stapel nicht mehr angezeigt werden, wenn sie angeklick sind
     document.querySelector("#Karte 1").addEventListener("click", function(): void { document.getElementById("Karte1").style.display = "block"});
     document.querySelector("#Karte 2").addEventListener("click", function(): void { document.getElementById("Karte2").style.display = "block"});
     document.querySelector("#Karte 3").addEventListener("click", function(): void { document.getElementById("Karte3").style.display = "block"});
     document.querySelector("#Karte 4").addEventListener("click", function(): void { document.getElementById("Karte4").style.display = "block"});
     document.querySelector("#Karte 5").addEventListener("click", function(): void { document.getElementById("Karte1").style.display = "block"});
 
+    //EventListener für Karten auf Töte Stapel nicht mehr angezeigt werden, wenn sie angeklick sind
+    document.querySelector("#Karte 12").addEventListener("click", function(): void { document.getElementById("Karte12").style.display = "block"});
 
     
     //Funktionen die in Computer Gegner passiert
@@ -226,9 +228,10 @@ window.addEventListener("load", function(): void {
             //Vergleichen jede Karte in Computer Stapel mit die erste Karte, die in Mitte ist
             for(let currentCard of cardsComputer)
             {
-                if(this.mitteInstanz.TryPlayCard(currentCard)) //por que ele não reconhe a função? 
+                if(this.mitteInstanz.TryPlayCard(currentCard)) 
                 {
                     this.removecard(currentCard);
+                    document.querySelector("#Karte 6").addEventListener("click", function(): void { document.getElementById("Karte6").style.display = "block"});
                     return (true);
                 }
 

@@ -182,7 +182,7 @@ window.addEventListener("load", function(): void {
     }
 
     shuffleCards(cardTotal);
-    console.log(cardTotal)
+    //console.log(cardTotal);
 
     //Teilen die Karten in computerGegner Stapel, spieler Stapel, Mitte Stapel und Rest Stapel
     let cardsPlayer = cardTotal.splice(0, 5);
@@ -194,6 +194,25 @@ window.addEventListener("load", function(): void {
     //console.log(cardsMitte);
     //console.log(cardTotal);
 
+
+    //Funktion macht clickbar die Karten
+    let itemPlayer = document.getElementsByClassName("clickSpieler");
+        for (var i = 0, lenP = itemPlayer.length; i < lenP; i++) {
+            itemPlayer [i].addEventListener("click", function(){
+                /*Push Card to Mitte Stapel*/
+            });
+        }
+    
+    let itemTotal = document.getElementsByClassName("clickTotal");
+        for (var i = 0, lenT = itemTotal.length; i < lenT; i++){
+            itemTotal [i].addEventListener("click", function(){
+                /*Push Card to Spieler Stapel*/
+            });
+        }
+
+
+
+    
     //Funktionen die in Computer Gegner passiert
     var computerGegner () : void => {
 

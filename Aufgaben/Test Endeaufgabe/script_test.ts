@@ -187,6 +187,8 @@ window.addEventListener("load", function(): void {
     const cardsComputer = cardTotal.slice(5, 10);
     const cardsMitte = cardTotal.splice(10, 1);
 
+    if (cardTotal.length > -1) {
+
     console.log(cardsPlayer);
     console.log(cardsComputer);
     console.log(cardsMitte);

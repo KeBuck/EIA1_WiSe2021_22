@@ -194,21 +194,30 @@ window.addEventListener("load", function(): void {
     //console.log(cardsMitte);
     //console.log(cardTotal);
 
+    //div in dem die Content von jeder Karte angezeigt wird
+    let karten: HTMLElement = document.querySelector("div").addEventListener;
+
+    //EventListener für legen die Karten in die Mitte Stapel
+    document.querySelector("#Karte 1").addEventListener("click", function(): void {});
+    document.querySelector("#Karte 2").addEventListener("click", function(): void {});
+    document.querySelector("#Karte 3").addEventListener("click", function(): void {});
+    document.querySelector("#Karte 4").addEventListener("click", function(): void {});
+    document.querySelector("#Karte 5").addEventListener("click", function(): void {});
 
     //Funktion macht clickbar die Karten
-    let itemPlayer = document.getElementsByClassName("clickSpieler");
+    /*let itemPlayer = document.getElementsByClassName("clickSpieler");
         for (var i = 0, lenP = itemPlayer.length; i < lenP; i++) {
             itemPlayer [i].addEventListener("click", function(){
-                /*Push Card to Mitte Stapel*/
+                /*Push Card to Mitte Stapel
             });
         }
     
     let itemTotal = document.getElementsByClassName("clickTotal");
         for (var i = 0, lenT = itemTotal.length; i < lenT; i++){
             itemTotal [i].addEventListener("click", function(){
-                /*Push Card to Spieler Stapel*/
+                Push Card to Spieler Stapel
             });
-        }
+        }*/
 
 
 
@@ -297,7 +306,7 @@ window.addEventListener("load", function(): void {
         
         //function pushCard (TopCardLay);
         pushCard (): void {
-            var TopCardPlayed = cardsMitte.push(cardsComputer[cardsComputer.indexOf(currentCard)]); //welche parameter?
+            var TopCardPlayed = cardsMitte.push.call(cardsComputer[currentCard index]); //welche parameter?
         }
         
 

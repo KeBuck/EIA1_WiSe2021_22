@@ -184,8 +184,8 @@ window.addEventListener("load", function(): void {
     //console.log(cardTotal);
 
     const cardsPlayer = cardTotal.slice(0, 5);
-    const cardsComputer = cardTotal.slice(5, 10);
-    const cardsMitte = cardTotal.splice(11);
+    const cardsComputer = cardTotal.slice(5, 5);
+    const cardsMitte = cardTotal.splice(10, 1);
 
     console.log(cardsPlayer);
     console.log(cardsComputer);

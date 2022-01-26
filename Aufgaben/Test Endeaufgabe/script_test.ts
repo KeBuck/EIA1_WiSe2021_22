@@ -180,5 +180,6 @@ window.addEventListener("load", function(): void {
     function shuffleCards (cardTotal) {
         cardTotal.sort(() => Math.random() - 0.5);
     }
-
+    shuffleCards(cardTotal);
+    console.log(cardTotal);
 })

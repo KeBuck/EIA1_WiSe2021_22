@@ -138,5 +138,7 @@ window.addEventListener("load", function () {
     function shuffleCards(cardTotal) {
         cardTotal.sort(function () { return Math.random() - 0.5; });
     }
+    shuffleCards(cardTotal);
+    console.log(cardTotal);
 });
 //# sourceMappingURL=script_test.js.map

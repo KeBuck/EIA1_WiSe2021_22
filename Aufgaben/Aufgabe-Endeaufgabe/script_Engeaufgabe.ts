@@ -208,7 +208,9 @@ window.addEventListener("load", function(): void {
 
     //Funktionen für die Spielleiter 
     class spielLeiter {
-        
+        document.querySelector("#startGame").addEventListener("click", function ():void { 
+            
+        });
     }
     
     //Funktionen die in Computer Gegner passiert

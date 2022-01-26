@@ -195,12 +195,13 @@ window.addEventListener("load", function(): void {
     //console.log(cardTotal);
 
 
-    //EventListener für Karten auf Spieler Stapel legen die Karten in die Mitte Stapel
-    document.querySelector("#Karte 1").addEventListener("click", function(): void {});
-    document.querySelector("#Karte 2").addEventListener("click", function(): void {});
-    document.querySelector("#Karte 3").addEventListener("click", function(): void {});
-    document.querySelector("#Karte 4").addEventListener("click", function(): void {});
-    document.querySelector("#Karte 5").addEventListener("click", function(): void {});
+
+    //EventListener für Karten auf Spieler Stapel nicht mehr angezeigt werden
+    document.querySelector("#Karte 1").addEventListener("click", function(): void { document.getElementById("Karte1").style.display = "block"});
+    document.querySelector("#Karte 2").addEventListener("click", function(): void { document.getElementById("Karte2").style.display = "block"});
+    document.querySelector("#Karte 3").addEventListener("click", function(): void { document.getElementById("Karte3").style.display = "block"});
+    document.querySelector("#Karte 4").addEventListener("click", function(): void { document.getElementById("Karte4").style.display = "block"});
+    document.querySelector("#Karte 5").addEventListener("click", function(): void { document.getElementById("Karte1").style.display = "block"});
 
 
     

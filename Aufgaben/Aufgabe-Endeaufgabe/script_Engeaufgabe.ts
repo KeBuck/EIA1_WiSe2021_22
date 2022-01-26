@@ -194,31 +194,13 @@ window.addEventListener("load", function(): void {
     //console.log(cardsMitte);
     //console.log(cardTotal);
 
-    //div in dem die Content von jeder Karte angezeigt wird
-    let karten: HTMLElement = document.querySelector("div").addEventListener;
 
-    //EventListener für legen die Karten in die Mitte Stapel
+    //EventListener für Karten auf Spieler Stapel legen die Karten in die Mitte Stapel
     document.querySelector("#Karte 1").addEventListener("click", function(): void {});
     document.querySelector("#Karte 2").addEventListener("click", function(): void {});
     document.querySelector("#Karte 3").addEventListener("click", function(): void {});
     document.querySelector("#Karte 4").addEventListener("click", function(): void {});
     document.querySelector("#Karte 5").addEventListener("click", function(): void {});
-
-    //Funktion macht clickbar die Karten
-    /*let itemPlayer = document.getElementsByClassName("clickSpieler");
-        for (var i = 0, lenP = itemPlayer.length; i < lenP; i++) {
-            itemPlayer [i].addEventListener("click", function(){
-                /*Push Card to Mitte Stapel
-            });
-        }
-    
-    let itemTotal = document.getElementsByClassName("clickTotal");
-        for (var i = 0, lenT = itemTotal.length; i < lenT; i++){
-            itemTotal [i].addEventListener("click", function(){
-                Push Card to Spieler Stapel
-            });
-        }*/
-
 
 
     
@@ -228,11 +210,14 @@ window.addEventListener("load", function(): void {
         //erstellen die Array mit die Karten von den Computer
     
         cardsComputer: Cards[];
+        mitteInstanz: Mitte;
         
-        constructor(pushedCards: Cards[])
+        constructor(pushedCards: Cards[], givenCardMitte: Mitte)
         {
             cardsComputer = pushedCards;
         }
+
+        
         
         //funktion um die Karte in die Mitte zu spielen
         playCard(): boolean {
@@ -240,7 +225,7 @@ window.addEventListener("load", function(): void {
             //Vergleichen jede Karte in Computer Stapel mit die erste Karte, die in Mitte ist
             for(let currentCard of cardsComputer)
             {
-                if(TryPlayCard.call(currentCard)) //por que ele não reconhe a função? 
+                if(this.mitteInstanz.TryPlayCard(currentCard)) //por que ele não reconhe a função? 
                 {
                     this.removecard(currentCard);
                     return (true);
@@ -296,8 +281,9 @@ window.addEventListener("load", function(): void {
 
         //Erkennt die erste Karte in der Mitte Stapel
 
-        getTopCard () : void {
+        getTopCard () : Cards {
             var currentTopCard = cardsMitte[cardsMitte.length - 1];
+            return currentTopCard;
             //console.log(currentTopCard);
         }
 
@@ -305,28 +291,26 @@ window.addEventListener("load", function(): void {
 
         
         //function pushCard (TopCardLay);
-        pushCard (): void {
-            var TopCardPlayed = cardsMitte.push.call(cardsComputer[currentCard index]); //welche parameter?
+        pushCard (computerCard: Cards) : void {
+            cardsMitte.push(computerCard);
         }
         
 
+
         //Vergleich ob die Karte gespielt ist gleich (Farbe oder Wert) als die erste Karte, die in der Mitte Stapel ist
-        TryPlayCard () : boolean {
+        TryPlayCard (givenCard: Cards) : boolean {
             
             
             let currentTopCard = this.getTopCard();
-            let givenCard = this.pushCard();
+            
 
             
             if(givenCard.color == currentTopCard.color || givenCard.wert == currentTopCard.wert) {
                 
                 //Wenn die Karte ist Farbe oder Wert gleich, dann ist sie in die Mitte Stapel gezeigt
-                //pushCard(givenCard)
-                const index = cardsMitte.indexOf(givenCard);
-                if (index > -1) {
-                    cardsMitte.splice (index, 1);
-                }
-                return true;
+                this.pushCard(givenCard);
+
+            return true;
             }
             //Wenn die Karte ist nicht gleich Farbe oder Wert, dann geht den Spiel weiter
             else {

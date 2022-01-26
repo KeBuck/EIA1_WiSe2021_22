@@ -208,9 +208,8 @@ window.addEventListener("load", function(): void {
 
     //Funktionen für die Spielleiter 
     class spielLeiter {
-        document.querySelector("#startGame").addEventListener("click", function ():void { 
-            
-        });
+        //document.querySelector("#startGame").addEventListener("click", function ():void { document.getElementById("spaceGame").style.display = "show"});
+
     }
     
     //Funktionen die in Computer Gegner passiert
@@ -255,10 +254,10 @@ window.addEventListener("load", function(): void {
                 //Dann die Funktion lass sie weg von den Array durch die Nummer von ihre Position
                 //index = Position die gespielte Karte und 1 =  lass nur ein item weg
                 cardsComputer.splice(index, 1);
-                           
+                        
             }
         }
-                       
+                    
 
         //überprüfen ob die Karte Stapel von Computer Gegern ist leer
         cardsLeft() : boolean {
@@ -329,6 +328,7 @@ window.addEventListener("load", function(): void {
         }
 
     }
+    
 
 
 

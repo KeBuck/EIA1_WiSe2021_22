@@ -140,9 +140,9 @@ window.addEventListener("load", function () {
     }
     shuffleCards(cardTotal);
     //console.log(cardTotal);
-    var cardsPlayer = cardTotal.slice(0, 4);
-    var cardsComputer = cardTotal.slice(5, 9);
-    var cardsMitte = cardTotal.splice(10, 10);
+    var cardsPlayer = cardTotal.slice(0, 5);
+    var cardsComputer = cardTotal.slice(5, 10);
+    var cardsMitte = cardTotal.splice(11);
     console.log(cardsPlayer);
     console.log(cardsComputer);
     console.log(cardsMitte);

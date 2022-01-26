@@ -229,16 +229,16 @@ window.addEventListener("load", function(): void {
         playCard(): boolean {
 
             //Vergleichen jede Karte in Computer Stapel mit die erste Karte, die in Mitte ist
-            for(let currentCard: Cards of cardsComputer)
+            for(let currentCard of cardsComputer)
             {
-                if(cardsMitte.TryPlayCard(currentCard))
+                if(TryPlayCard.call(currentCard)) //por que ele não reconhe a função? 
                 {
                     this.removecard(currentCard);
-                    return true;
+                    return (true);
                 }
 
             }
-            return false;
+            return (false);
         }
 
         //Wenn die aktuell Karte von Computer Stapel ist gleich (true) als die Karte, die in Mitte Stapel is, dann die ist von den Stapel verschiebt.
@@ -294,9 +294,10 @@ window.addEventListener("load", function(): void {
 
         //Zeigt die gespielte Karte in der Mitte Stapel
 
+        
         //function pushCard (TopCardLay);
         pushCard (): void {
-            var TopCardPlayed = cardsMitte.push(playCard); //welche parameter?
+            var TopCardPlayed = cardsMitte.push(cardsComputer[cardsComputer.indexOf(currentCard)]); //welche parameter?
         }
         
 

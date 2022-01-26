@@ -139,6 +139,13 @@ window.addEventListener("load", function () {
         cardTotal.sort(function () { return Math.random() - 0.5; });
     }
     shuffleCards(cardTotal);
+    //console.log(cardTotal);
+    var cardsPlayer = cardTotal.slice(0, 4);
+    var cardsComputer = cardTotal.slice(5, 9);
+    var cardsMitte = cardTotal.splice(10, 10);
+    console.log(cardsPlayer);
+    console.log(cardsComputer);
+    console.log(cardsMitte);
     console.log(cardTotal);
 });
 //# sourceMappingURL=script_test.js.map

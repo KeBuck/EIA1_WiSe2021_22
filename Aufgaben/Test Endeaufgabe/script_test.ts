@@ -181,5 +181,14 @@ window.addEventListener("load", function(): void {
         cardTotal.sort(() => Math.random() - 0.5);
     }
     shuffleCards(cardTotal);
+    //console.log(cardTotal);
+
+    const cardsPlayer = cardTotal.slice(0, 4);
+    const cardsComputer = cardTotal.slice(5, 9);
+    const cardsMitte = cardTotal.splice(10, 10);
+
+    console.log(cardsPlayer);
+    console.log(cardsComputer);
+    console.log(cardsMitte);
     console.log(cardTotal);
 })

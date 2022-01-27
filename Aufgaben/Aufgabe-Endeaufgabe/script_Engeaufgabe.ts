@@ -212,9 +212,25 @@ window.addEventListener("load", function(): void {
         mitteInstanz: Mitte;
         allCardsStapel: Cards [];
 
-        
+        constructor(){
+            //belegt hier alle Karten als allCardsStapel
+            //Aufteilung den Stapel verweisen
+            this.mitteInstanz = new Mitte(cardsMitte);
+            this.computerGegnerInstanz = new computerGegner(cardsComputer, this.mitteInstanz);
+        }
+
+        //Funktion um den Spiel zu starten
+        startGame(): void {
+            //Wahrend den ComputerGegner eine Karte spielt, den Spiel geht weiter
+            while(this.computerGegnerInstanz.playCard()) {
+
+            }
+        }
+        //Wenn nicht den Spiel ist zuende :) MVP
     }
 
+    let Spiel = new SpielLeiter();
+    Spiel.startGame();
     
 
 

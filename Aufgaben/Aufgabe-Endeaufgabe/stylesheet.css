@@ -1,7 +1,20 @@
+#Computer {
+    height: 100px;
+    width: 100px;
+    color: blue;
+}
+
+#Mitte {
+    height: 100px;
+    width: 100px;
+    color:crimson
+}
+
+
 .hidden {
 
 }
 
 .startBtn {
-    
+
 }

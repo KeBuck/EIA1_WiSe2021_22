@@ -1,178 +1,80 @@
 window.addEventListener("load", function(): void {
 
+    var spielerDiv = document.querySelector("#Spieler");
+    var computerDiv = document.querySelector("#Computer");
+    var mitteDiv = document.querySelector("#Mitte");
+    var stapelDiv = document.querySelector("#Stapel");
+
+
     //Interface definiert die Datenstruktur von den Karten. Bietet Vorlage der Eingenschaften (Farbe und Wert) für Objekt-Instanzen.
-    interface Cards {
+    class Cards {
         color: string;
         wert: number;
+
+        //erstellt neue Karte mit eingegeben Werten
+        constructor(colorToSet: string, wertToSet: number)
+        {
+            this.color = colorToSet;
+            this.wert = wertToSet;
+        }
+
+        //erstellt HTML Karte
+        generateDiv(showCard : boolean) : HTMLDivElement {
+            let karte = document.createElement("div");
+    
+            if (showCard){
+                karte.style.color = this.color;
+                karte.innerHTML = this.wert.toString();
+            }
+            else {
+                 karte.classList.add("hidden")  
+            }
+            return karte;
+        }
 
     }
  
     //Objekt-Instanz: Karten mit Eingenschaften (Farbe und Wert)
     var cardTotal: Cards[]= [
-        //Karten mit die rote Farbe
-        {
-            color: "red",
-            wert: 1
-        },
+        //rote Karte
+        new Cards("red",1),
+        new Cards("red",2),
+        new Cards("red",3),
+        new Cards("red",4),
+        new Cards("red",5),
+        new Cards("red",6),
+        new Cards("red",7),
+        new Cards("red",8),
+        
+        //blaue Karte
+        new Cards("blue",1),
+        new Cards("blue",2),
+        new Cards("blue",3),
+        new Cards("blue",4),
+        new Cards("blue",5),
+        new Cards("blue",6),
+        new Cards("blue",7),
+        new Cards("blue",8),
 
-        {
-            color: "red",
-            wert: 2
-        },
+        //grüne Karte
+        new Cards("green",1),
+        new Cards("green",2),
+        new Cards("green",3),
+        new Cards("green",4),
+        new Cards("green",5),
+        new Cards("green",6),
+        new Cards("green",7),
+        new Cards("green",8),
 
-        {
-            color: "red",
-            wert: 3
-        },
-
-        {
-            color: "red",
-            wert: 4
-        },
-
-        {
-            color: "red",
-            wert: 5
-        },
-
-        {
-            color: "red",
-            wert: 6
-        },
-
-        {
-            color: "red",
-            wert: 7
-        },
-
-        {
-            color: "red",
-            wert: 8
-        },
-
-        //Karten mit blaue Farbe
-        {
-            color: "blau",
-            wert: 1
-        },
-
-        {
-            color: "blau",
-            wert: 2
-        },
-
-        {
-            color: "blau",
-            wert: 3
-        },
-
-        {
-            color: "blau",
-            wert: 4
-        },
-
-        {
-            color: "blau",
-            wert: 5
-        },
-
-        {
-            color: "blau",
-            wert: 6
-        },
-
-        {
-            color: "blau",
-            wert: 7
-        },
-
-        {
-            color: "blau",
-            wert: 8
-        },
-
-        //Karten mit grüne Farbe
-        {
-            color: "grun",
-            wert: 1
-        },
-
-        {
-            color: "grun",
-            wert: 2
-        },
-
-        {
-            color: "grun",
-            wert: 3
-        },
-
-        {
-            color: "grun",
-            wert: 4
-        },
-
-        {
-            color: "grun",
-            wert: 5
-        },
-
-        {
-            color: "grun",
-            wert: 6
-        },
-
-        {
-            color: "grun",
-            wert: 7
-        },
-
-        {
-            color: "grun",
-            wert: 8
-        },
-
-
-        //Karten mit gelbe Farbe
-        {
-            color: "gelb",
-            wert: 1
-        },
-
-        {
-            color: "gelb",
-            wert: 2
-        },
-
-        {
-            color: "gelb",
-            wert: 3
-        },
-
-        {
-            color: "gelb",
-            wert: 4
-        },
-
-        {
-            color: "gelb",
-            wert: 5
-        },
-
-        {
-            color: "gelb",
-            wert: 6
-        },
-
-        {
-            color: "gelb",
-            wert: 7
-        },
-
-        {
-            color: "gelb",
-            wert: 8
-        },
+        //gelbe Karte
+        new Cards("yellow",1),
+        new Cards("yellow",2),
+        new Cards("yellow",3),
+        new Cards("yellow",4),
+        new Cards("yellow",5),
+        new Cards("yellow",6),
+        new Cards("yellow",7),
+        new Cards("yellow",8),
     ];
 
 
@@ -195,16 +97,18 @@ window.addEventListener("load", function(): void {
     //console.log(cardTotal);
 
 
+    class functionCards{
+        
+        showCards : Cards [];
 
-    //EventListener für Karten auf Spieler Stapel nicht mehr angezeigt werden, wenn sie angeklick sind
-    document.querySelector("#Karte 1").addEventListener("click", function(): void { document.getElementById("Karte1").style.display = "block"});
-    document.querySelector("#Karte 2").addEventListener("click", function(): void { document.getElementById("Karte2").style.display = "block"});
-    document.querySelector("#Karte 3").addEventListener("click", function(): void { document.getElementById("Karte3").style.display = "block"});
-    document.querySelector("#Karte 4").addEventListener("click", function(): void { document.getElementById("Karte4").style.display = "block"});
-    document.querySelector("#Karte 5").addEventListener("click", function(): void { document.getElementById("Karte1").style.display = "block"});
+        constructor (cardTotal: Cards[]) {
+            this.showCards = cardTotal
+        }
 
-    //EventListener für Karten auf Töte Stapel nicht mehr angezeigt werden, wenn sie angeklick sind
-    document.querySelector("#Karte 12").addEventListener("click", function(): void { document.getElementById("Karte12").style.display = "block"});
+        
+
+    }
+
 
     //Funktionen für die Spielleiter 
     class SpielLeiter {
@@ -223,7 +127,7 @@ window.addEventListener("load", function(): void {
         startGame(): void {
             //Wahrend den ComputerGegner eine Karte spielt, den Spiel geht weiter
             while(this.computerGegnerInstanz.playCard()) {
-
+                
             }
         }
         //Wenn nicht den Spiel ist zuende :) MVP
@@ -296,6 +200,16 @@ window.addEventListener("load", function(): void {
             //Funktion auf den Spieler verweisen
         }
 
+        UpdateUI() : void {
+            //leere Div erstellen, um dannach mit Karten div erfühlen
+            computerDiv.innerHTML = "";
+            for (let currentCard of cardsComputer){
+                let karteDiv = currentCard.generateDiv(false);
+                computerDiv.appendChild(karteDiv);
+            }
+            
+        }
+
     }
 
     //Funktionen, die in die Mitte passieren
@@ -353,7 +267,7 @@ window.addEventListener("load", function(): void {
 
     }
     
-
+   
 
 
 });

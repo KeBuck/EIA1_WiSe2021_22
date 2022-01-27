@@ -1,12 +1,13 @@
 window.addEventListener("load", function(): void {
 
+    //Deklaration an elementen von Main Datei
     var spielerDiv = document.querySelector("#Spieler");
     var computerDiv = document.querySelector("#Computer");
     var mitteDiv = document.querySelector("#Mitte");
     var stapelDiv = document.querySelector("#Stapel");
 
 
-    //Interface definiert die Datenstruktur von den Karten. Bietet Vorlage der Eingenschaften (Farbe und Wert) für Objekt-Instanzen.
+    //Class definiert die Datenstruktur von den Karten. Bietet Vorlage der Eingenschaften (Farbe und Wert) für Objekt-Instanzen und übergibt Funktionen, um die Karten zu stylen.
     class Cards {
         color: string;
         wert: number;
@@ -18,7 +19,7 @@ window.addEventListener("load", function(): void {
             this.wert = wertToSet;
         }
 
-        //erstellt HTML Karte
+        //erstellt HTML Karte Style
         generateDiv(showCard : boolean) : HTMLDivElement {
             let karte = document.createElement("div");
     
@@ -125,6 +126,9 @@ window.addEventListener("load", function(): void {
 
         //Funktion um den Spiel zu starten
         startGame(): void {
+            
+            
+
             //Wahrend den ComputerGegner eine Karte spielt, den Spiel geht weiter
             while(this.computerGegnerInstanz.playCard()) {
                 
@@ -134,7 +138,16 @@ window.addEventListener("load", function(): void {
     }
 
     let Spiel = new SpielLeiter();
-    Spiel.startGame();
+    //Spiel.startGame();
+
+   
+    let startButton = document.createElement("button");
+        startButton.classList.add("startBtn");
+        document.body.appendChild(startButton);
+        startButton.onclick = Spiel.startGame;
+
+    
+        
     
 
 
@@ -163,7 +176,7 @@ window.addEventListener("load", function(): void {
                 if(this.mitteInstanz.TryPlayCard(currentCard)) 
                 {
                     this.removecard(currentCard);
-                    document.querySelector("#Karte 6").addEventListener("click", function(): void { document.getElementById("Karte6").style.display = "block"});
+                    
                     return (true);
                 }
 
@@ -200,11 +213,14 @@ window.addEventListener("load", function(): void {
             //Funktion auf den Spieler verweisen
         }
 
+        //aktualisiert die 
         UpdateUI() : void {
             //leere Div erstellen, um dannach mit Karten div erfühlen
             computerDiv.innerHTML = "";
+            //überprüft jede element in Array von Computer und übergibt die Funktion generateDiv
             for (let currentCard of cardsComputer){
                 let karteDiv = currentCard.generateDiv(false);
+                //verbindet die Karten an die Computer Öberfläche
                 computerDiv.appendChild(karteDiv);
             }
             

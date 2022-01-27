@@ -212,10 +212,8 @@ window.addEventListener("load", function(): void {
             document.getElementById("spaceGame").style.display = "show";
             
         });*/
-        
-        startComputer () : Cards {
-            
-        }
+
+
     }
     
     //Funktionen die in Computer Gegner passiert

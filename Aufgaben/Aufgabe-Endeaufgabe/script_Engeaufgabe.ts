@@ -286,13 +286,14 @@ window.addEventListener("load", function(): void {
         cardsLeft() : boolean {
 
             //Wenn die Stapel leer ist, dann hat den Computer Gegern den Spiel gewinnen
-            if(this.cardsComputer.length != 0) {
+            if(this.cardsComputer.length == 0) {
                 return true;
             }
             //Wenn die Stapel nicht leer ist, dann geht den Spiel weiter
             else {
                 return false;
             }
+            //Funktion auf den Spieler verweisen
         }
 
     }
@@ -314,7 +315,7 @@ window.addEventListener("load", function(): void {
         //Erkennt die erste Karte in der Mitte Stapel
 
         getTopCard () : Cards {
-            var currentTopCard = cardsMitte[cardsMitte.length - 1];
+            var currentTopCard = cardsMitte[0];//erstellen immer die erste position von Array?
             return currentTopCard;
             //console.log(currentTopCard);
         }
@@ -323,8 +324,8 @@ window.addEventListener("load", function(): void {
 
         
         //function pushCard (TopCardLay);
-        pushCard (computerCard: Cards) : void {
-            cardsMitte.push(computerCard);
+        pushCard (currentCard: Cards) : void {
+            cardsMitte.push(currentCard);
         }
         
 

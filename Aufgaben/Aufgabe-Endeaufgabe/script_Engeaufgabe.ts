@@ -207,15 +207,18 @@ window.addEventListener("load", function(): void {
     document.querySelector("#Karte 12").addEventListener("click", function(): void { document.getElementById("Karte12").style.display = "block"});
 
     //Funktionen für die Spielleiter 
-    class spielLeiter {
-        /*document.querySelector("#startGame").addEventListener("click", function ():void { 
-            document.getElementById("spaceGame").style.display = "show";
-            
-        });*/
+    class SpielLeiter {
+        computerGegnerInstanz: computerGegner;
+        mitteInstanz: Mitte;
+        allCardsStapel: Cards [];
 
-
+        
     }
+
     
+
+
+
     //Funktionen die in Computer Gegner passiert
     class computerGegner {
 

@@ -208,8 +208,14 @@ window.addEventListener("load", function(): void {
 
     //Funktionen für die Spielleiter 
     class spielLeiter {
-        //document.querySelector("#startGame").addEventListener("click", function ():void { document.getElementById("spaceGame").style.display = "show"});
-
+        /*document.querySelector("#startGame").addEventListener("click", function ():void { 
+            document.getElementById("spaceGame").style.display = "show";
+            
+        });*/
+        
+        startComputer () : Cards {
+            
+        }
     }
     
     //Funktionen die in Computer Gegner passiert

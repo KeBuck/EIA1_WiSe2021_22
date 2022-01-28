@@ -28,21 +28,23 @@ p {
     color: #FFF;
     background: #000;
 
-    background: repeating-conic-grsdient(#000 0 11deg, #222 0 21deg);
+    background: repeating-conic-gradient(#000 0 11deg, #222 0 21deg);
+    border: 1 solid;
+    border-radius: 2px;
+
+    width: 20px;
+    height: 20px;
 
     line-height: 1;
-}
-
-:after{
-    display: block;
+    display: inline-block;
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    border: 1 solid;
-    border-radius: 1.70px;
-    content: '';
+   
 }
 
-&>span{
+
+
+/*&>span{
     background: #FFF;
     display: inline-block;
     border-radius: 100%;
@@ -63,8 +65,8 @@ p {
 }
 
 .startBtn {
-
-}
+ 
+}*/
 
 
 
@@ -72,22 +74,26 @@ p {
     cursor: pointer;
     font-size: 48px;
 
+    width: 20px;
+    height: 20px;
+
     color: #fff;
     background: #000;
     line-height: 1;
     position: relative;
-}
-
-:after {
-    display: block;
-    position: absolute;
     top: 0; left: 0; right: 0; bottom:0;
     border: 1px solid;
     border-radius: 2px;
+}
+
+.karteStyle:after {
+    display: block;
+    position: absolute;
+    
     content: '';
 }
 
-.value {
+/*.value {
     background: #FFF;
     position: absolute;
     border-radius: 100%;
@@ -100,12 +106,12 @@ p {
     margin-left: -10px;
     text-align: center;
     transform: skewX(-15deg);
-}
+}*/
 
-:span {
+/*:span {
     display: inline-block;
     transform: skewX(15deg);
     line-height: 1.5;
-}
+}*/
 
     

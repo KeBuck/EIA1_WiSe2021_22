@@ -1,117 +1,140 @@
-body {
-    background: #060606;
-    text-align: center;
-    padding: 64px;
-    font-size: 19px;
+
+@font-face {
+    font-family: "UnoFont";
+    src: url(../Aufgabe-Endeaufgabe/Fonts/LuckiestGuy-Regular.ttf);
 }
+
+body {
+    background-color: rgb(26, 26, 26);
+}
+
+footer{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+}
+
+.startBtn {
+ height: 100px;
+ width: 300px;
+ border-radius: 5px;
+ background-color: rgb(228, 96, 96);
+ border-color: rgb(209, 66, 66);
+ color: #ffffff;
+ font-size: 40px;
+ font-family: "UnoFont";
+ display: block;
+ margin-right: auto;
+ margin-left: auto ;
+ margin-top: 400px;
+}
+
+.startBtn:hover {
+    background-color:rgb(224, 123, 123) ;
+}
+
+#Spieler {
+    height: 350px;
+    width: 100%;
+    background-color: rgb(44, 44, 44);
+    border: 3px solid rgb(121, 100, 237);
+    border-radius: 5px;
+    position: absolute;
+    top: 62%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    
+    
+
+}
+
+
+#Computer {
+    height: 350px;
+    width: 100%;
+    background-color: rgb(44, 44, 44);
+    border: 3px solid rgb(238, 166, 9);
+    border-radius: 5px;
+    position: relative;
+    padding: 20px;
+    justify-content: space-around;
+    
+}
+
+
+#Mitte {
+    height: 350px;
+    width: 600px;
+    background-color: rgb(44, 44, 44);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    position: absolute;
+    left: 35%;
+    top: 427px;
+    justify-content: center;
+
+}
+
+#Stapel {
+    height: 350px;
+    width: 300px;
+    background-color: rgb(44, 44, 44);
+    border: 3px solid rgb(110, 110, 110);
+    border-radius: 5px;
+    position: absolute;
+    left: 80%;
+    top: 427px;
+    justify-content: center;
+
+
+}
+
 
 p {
     color: #FFF
 }
 
-@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy:400,700');
-
-#Computer {
-    height: 100px;
-    width: 100px;
-    background-color: blue;
-}
-
-#Mitte {
-    height: 100px;
-    width: 100px;
-    background-color:crimson
-}
-
-
-.hidden {
-    color: #FFF;
-    background: #000;
-
-    background: repeating-conic-gradient(#000 0 11deg, #222 0 21deg);
-    border: 1 solid;
-    border-radius: 2px;
-
-    width: 20px;
-    height: 20px;
-
-    line-height: 1;
-    display: inline-block;
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-   
-}
-
-
-
-/*&>span{
-    background: #FFF;
-    display: inline-block;
-    border-radius: 100%;
-    width: 20px;
-    height: 20px;
-    color: #000;
-    line-height: 1.4;
-    font-size: 10px;
-    position: relative;
-    top: 15%;
-    transform: skewX(-15deg);
-}
-
-&> span {
-    display: inline-block;
-    transform: translateY(-25%) skewX(15deg);
-    font-size: 8px;
-}
-
-.startBtn {
- 
-}*/
-
-
-
 .karteStyle {
     cursor: pointer;
-    font-size: 48px;
 
-    width: 20px;
-    height: 20px;
-
-    color: #fff;
-    background: #000;
     line-height: 1;
     position: relative;
-    top: 0; left: 0; right: 0; bottom:0;
     border: 1px solid;
-    border-radius: 2px;
-}
+    border-radius: 10px;
+    float: left;
 
-.karteStyle:after {
-    display: block;
-    position: absolute;
-    
-    content: '';
-}
-
-/*.value {
-    background: #FFF;
-    position: absolute;
-    border-radius: 100%;
-    width: 20px;
-    height: 20px;
-    color: #000;
-    font-size: 11px;
-    top: 50%; left: 50%;
-    margin-top: -10px;
-    margin-left: -10px;
+    color: #ffffff; 
+    font-size: 150px;
+    font-weight: bold;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
     text-align: center;
-    transform: skewX(-15deg);
-}*/
-
-/*:span {
+    line-height: 250px;
     display: inline-block;
-    transform: skewX(15deg);
-    line-height: 1.5;
-}*/
+
+    
+}
+
+.hidden {
+    height: 250px;
+    width: 150px;
+
+    color: #FFF;
+    background: #000;
+    
+    background: repeating-conic-gradient(#000 0 11deg, #222 0 21deg);
+
+    border-radius: 10px;
+    position: relative;
+    float: left;
+}
+
+
+
+
 
     

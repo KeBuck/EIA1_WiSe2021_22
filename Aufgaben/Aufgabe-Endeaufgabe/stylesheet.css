@@ -34,7 +34,7 @@ footer{
 }
 
 #Spieler {
-    height: 350px;
+    height: 200px;
     width: 100%;
     background-color: rgb(44, 44, 44);
     border: 3px solid rgb(121, 100, 237);
@@ -42,7 +42,7 @@ footer{
     position: absolute;
     top: 62%;
     padding: 20px;
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
@@ -54,7 +54,7 @@ footer{
 
 
 #Computer {
-    height: 350px;
+    height: 200px;
     width: 100%;
     background-color: rgb(44, 44, 44);
     border: 3px solid rgb(238, 166, 9);
@@ -67,27 +67,27 @@ footer{
 
 
 #Mitte {
-    height: 350px;
+    height: 150px;
     width: 600px;
     background-color: rgb(44, 44, 44);
     border: 3px solid rgb(255, 255, 255);
     border-radius: 5px;
     position: absolute;
     left: 35%;
-    top: 427px;
+    top: 280px;
     justify-content: center;
 
 }
 
 #Stapel {
-    height: 350px;
+    height: 150px;
     width: 300px;
     background-color: rgb(44, 44, 44);
     border: 3px solid rgb(110, 110, 110);
     border-radius: 5px;
     position: absolute;
     left: 80%;
-    top: 427px;
+    top: 280px;
     justify-content: center;
 
 
@@ -108,20 +108,20 @@ p {
     float: left;
 
     color: #ffffff; 
-    font-size: 150px;
+    font-size: 50px;
     font-weight: bold;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
     text-align: center;
-    line-height: 250px;
+    line-height: 150px;
     display: inline-block;
 
     
 }
 
 .hidden {
-    height: 250px;
-    width: 150px;
+    height: 150px;
+    width: 50px;
 
     color: #FFF;
     background: #000;

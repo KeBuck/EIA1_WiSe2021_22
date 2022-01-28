@@ -5,6 +5,10 @@ body {
     font-size: 19px;
 }
 
+p {
+    color: #FFF
+}
+
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy:400,700');
 
 #Computer {

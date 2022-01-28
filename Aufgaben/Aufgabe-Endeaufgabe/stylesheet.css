@@ -44,7 +44,7 @@ footer{
     padding: 20px;
     display: grid;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
     margin: auto;
     

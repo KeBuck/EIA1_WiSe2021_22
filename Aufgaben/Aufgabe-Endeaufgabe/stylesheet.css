@@ -1,3 +1,11 @@
+body {
+    background: #060606;
+    text-align: center;
+    padding: 64px;
+    font-size: 19px;
+}
+
+
 #Computer {
     height: 100px;
     width: 100px;
@@ -16,5 +24,10 @@
 }
 
 .startBtn {
+
+}
+
+.karteStyle {
+
 
 }

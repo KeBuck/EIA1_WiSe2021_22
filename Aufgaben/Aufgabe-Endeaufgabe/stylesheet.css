@@ -21,15 +21,87 @@ body {
 
 
 .hidden {
+    color: #FFF;
+    background: #000;
 
+    background: repeating-conic-grsdient(#000 0 11deg, #222 0 21deg);
+
+    line-height: 1;
+}
+
+:after{
+    display: block;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border: 1 solid;
+    border-radius: 1.70px;
+    content: '';
+}
+
+&>span{
+    background: #FFF;
+    display: inline-block;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    color: #000;
+    line-height: 1.4;
+    font-size: 10px;
+    position: relative;
+    top: 15%;
+    transform: skewX(-15deg);
+}
+
+&> span {
+    display: inline-block;
+    transform: translateY(-25%) skewX(15deg);
+    font-size: 8px;
 }
 
 .startBtn {
 
 }
 
+
+
 .karteStyle {
     cursor: pointer;
     font-size: 48px;
 
+    color: #fff;
+    background: #000;
+    line-height: 1;
+    position: relative;
 }
+
+:after {
+    display: block;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom:0;
+    border: 1px solid;
+    border-radius: 2px;
+    content: '';
+}
+
+.value {
+    background: #FFF;
+    position: absolute;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    color: #000;
+    font-size: 11px;
+    top: 50%; left: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+    text-align: center;
+    transform: skewX(-15deg);
+}
+
+:span {
+    display: inline-block;
+    transform: skewX(15deg);
+    line-height: 1.5;
+}
+
+    

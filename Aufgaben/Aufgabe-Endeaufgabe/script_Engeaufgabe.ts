@@ -6,6 +6,7 @@ window.addEventListener("load", function(): void {
     var mitteDiv = document.querySelector("#Mitte");
     var stapelDiv = document.querySelector("#Stapel");
 
+    
 
     //Class definiert die Datenstruktur von den Karten. Bietet Vorlage der Eingenschaften (Farbe und Wert) für Objekt-Instanzen und übergibt Funktionen, um die Karten zu stylen.
     class Cards {
@@ -22,6 +23,7 @@ window.addEventListener("load", function(): void {
         //erstellt HTML Karte Style
         generateDiv(showCard : boolean) : HTMLDivElement {
             let karte = document.createElement("div");
+            karte.classList.add("karteStyle");
     
             if (showCard){
                 karte.style.color = this.color;
@@ -78,6 +80,38 @@ window.addEventListener("load", function(): void {
         new Cards("yellow",8),
     ];
 
+    class SpielLeiter {
+        computerGegnerInstanz: computerGegner;
+        mitteInstanz: Mitte;
+        allCardsStapel: Cards [];
+
+        constructor(){
+            //belegt hier alle Karten als allCardsStapel
+            //Aufteilung den Stapel verweisen
+            this.mitteInstanz = new Mitte(cardsMitte);
+            this.computerGegnerInstanz = new computerGegner(cardsComputer, this.mitteInstanz);
+        }
+
+        //Funktion um den Spiel zu starten
+        startGame(): void {
+            
+            
+
+            //Wahrend den ComputerGegner eine Karte spielt, den Spiel geht weiter
+            while(this.computerGegnerInstanz.playCard()) {
+                
+            }
+        }
+        //Wenn nicht den Spiel ist zuende :) MVP
+    }
+
+    let Spiel = new SpielLeiter();
+
+    let startButton = document.createElement("button");
+    startButton.classList.add("startBtn");
+    document.body.appendChild(startButton);
+    startButton.onclick = Spiel.startGame;
+
 
     //Mischen die Karten
     function shuffleCards (cardTotal) {
@@ -112,7 +146,7 @@ window.addEventListener("load", function(): void {
 
 
     //Funktionen für die Spielleiter 
-    class SpielLeiter {
+    /*class SpielLeiter {
         computerGegnerInstanz: computerGegner;
         mitteInstanz: Mitte;
         allCardsStapel: Cards [];
@@ -135,16 +169,13 @@ window.addEventListener("load", function(): void {
             }
         }
         //Wenn nicht den Spiel ist zuende :) MVP
-    }
+    }*/
 
-    let Spiel = new SpielLeiter();
+    //let Spiel = new SpielLeiter();
     //Spiel.startGame();
 
    
-    let startButton = document.createElement("button");
-        startButton.classList.add("startBtn");
-        document.body.appendChild(startButton);
-        startButton.onclick = Spiel.startGame;
+
 
     
         

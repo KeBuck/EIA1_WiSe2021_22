@@ -14,6 +14,7 @@ window.addEventListener("load", function () {
         //erstellt HTML Karte Style
         Cards.prototype.generateDiv = function (showCard) {
             var karte = document.createElement("div");
+            karte.classList.add("karteStyle");
             if (showCard) {
                 karte.style.color = this.color;
                 karte.innerHTML = this.wert.toString();
@@ -64,6 +65,26 @@ window.addEventListener("load", function () {
         new Cards("yellow", 7),
         new Cards("yellow", 8),
     ];
+    var SpielLeiter = /** @class */ (function () {
+        function SpielLeiter() {
+            //belegt hier alle Karten als allCardsStapel
+            //Aufteilung den Stapel verweisen
+            this.mitteInstanz = new Mitte(cardsMitte);
+            this.computerGegnerInstanz = new computerGegner(cardsComputer, this.mitteInstanz);
+        }
+        //Funktion um den Spiel zu starten
+        SpielLeiter.prototype.startGame = function () {
+            //Wahrend den ComputerGegner eine Karte spielt, den Spiel geht weiter
+            while (this.computerGegnerInstanz.playCard()) {
+            }
+        };
+        return SpielLeiter;
+    }());
+    var Spiel = new SpielLeiter();
+    var startButton = document.createElement("button");
+    startButton.classList.add("startBtn");
+    document.body.appendChild(startButton);
+    startButton.onclick = Spiel.startGame;
     //Mischen die Karten
     function shuffleCards(cardTotal) {
         cardTotal.sort(function () { return Math.random() - 0.5; });
@@ -85,27 +106,32 @@ window.addEventListener("load", function () {
         return functionCards;
     }());
     //Funktionen für die Spielleiter 
-    var SpielLeiter = /** @class */ (function () {
-        function SpielLeiter() {
+    /*class SpielLeiter {
+        computerGegnerInstanz: computerGegner;
+        mitteInstanz: Mitte;
+        allCardsStapel: Cards [];
+
+        constructor(){
             //belegt hier alle Karten als allCardsStapel
             //Aufteilung den Stapel verweisen
             this.mitteInstanz = new Mitte(cardsMitte);
             this.computerGegnerInstanz = new computerGegner(cardsComputer, this.mitteInstanz);
         }
+
         //Funktion um den Spiel zu starten
-        SpielLeiter.prototype.startGame = function () {
+        startGame(): void {
+            
+            
+
             //Wahrend den ComputerGegner eine Karte spielt, den Spiel geht weiter
-            while (this.computerGegnerInstanz.playCard()) {
+            while(this.computerGegnerInstanz.playCard()) {
+                
             }
-        };
-        return SpielLeiter;
-    }());
-    var Spiel = new SpielLeiter();
+        }
+        //Wenn nicht den Spiel ist zuende :) MVP
+    }*/
+    //let Spiel = new SpielLeiter();
     //Spiel.startGame();
-    var startButton = document.createElement("button");
-    startButton.classList.add("startBtn");
-    document.body.appendChild(startButton);
-    startButton.onclick = Spiel.startGame;
     //Funktionen die in Computer Gegner passiert
     var computerGegner = /** @class */ (function () {
         function computerGegner(pushedCards, givenCardMitte) {

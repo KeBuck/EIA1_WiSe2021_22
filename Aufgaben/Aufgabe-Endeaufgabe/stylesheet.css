@@ -5,6 +5,7 @@ body {
     font-size: 19px;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy:400,700');
 
 #Computer {
     height: 100px;
@@ -28,6 +29,7 @@ body {
 }
 
 .karteStyle {
-
+    cursor: pointer;
+    font-size: 48px;
 
 }
